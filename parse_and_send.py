@@ -4,11 +4,10 @@ ATB Market - парсер товаров дня с отправкой в Telegra
 """
 
 import os
-import re
 import sys
-import json
 import logging
 import requests
+import cloudscraper
 from bs4 import BeautifulSoup
 from datetime import datetime
 
@@ -28,23 +27,72 @@ HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/124.0.0.0 Safari/537.36"
+        "Chrome/147.0.0.0 Safari/537.36"
     ),
-    "Accept-Language": "uk,ru;q=0.9,en;q=0.8",
+    "Accept-Language": "ru,uk;q=0.9,en-US;q=0.8,en;q=0.7",
     "Accept": (
         "text/html,application/xhtml+xml,application/xml;"
-        "q=0.9,image/avif,image/webp,*/*;q=0.8"
+        "q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,"
+        "application/signed-exchange;v=b3;q=0.7"
     ),
     "Referer": "https://www.atbmarket.com/",
+    "sec-fetch-dest": "document",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-site": "same-origin",
+    "sec-fetch-user": "?1",
+    "upgrade-insecure-requests": "1",
 }
 
 
 # ─────────────────────── парсинг ─────────────────────────
 
+def parse_cookies_str(cookies_raw: str) -> dict:
+    """Парсит строку куков в словарь."""
+    cookies = {}
+    for part in cookies_raw.split(";"):
+        part = part.strip()
+        if "=" in part:
+            k, v = part.split("=", 1)
+            cookies[k.strip()] = v.strip()
+    return cookies
+
+
 def fetch_page(url: str) -> str:
-    resp = requests.get(url, headers=HEADERS, timeout=30)
-    resp.raise_for_status()
-    return resp.text
+    """
+    Пробует загрузить страницу:
+    1. Через cloudscraper (обходит Cloudflare автоматически)
+    2. Если не получилось — через обычный requests с куками из ATB_COOKIES
+    """
+    cookies_raw = os.environ.get("ATB_COOKIES", "").strip()
+    cookies = parse_cookies_str(cookies_raw) if cookies_raw else {}
+
+    # Попытка 1: cloudscraper
+    try:
+        log.info("Пробуем cloudscraper...")
+        scraper = cloudscraper.create_scraper(
+            browser={"browser": "chrome", "platform": "windows", "mobile": False}
+        )
+        if cookies:
+            scraper.cookies.update(cookies)
+        resp = scraper.get(url, headers=HEADERS, timeout=30)
+        resp.raise_for_status()
+        log.info("cloudscraper: успех (HTTP %d)", resp.status_code)
+        return resp.text
+    except Exception as e:
+        log.warning("cloudscraper не сработал: %s", e)
+
+    # Попытка 2: обычный requests с куками
+    if cookies:
+        log.info("Пробуем requests + ATB_COOKIES...")
+        resp = requests.get(url, headers=HEADERS, cookies=cookies, timeout=30)
+        resp.raise_for_status()
+        log.info("requests+cookies: успех (HTTP %d)", resp.status_code)
+        return resp.text
+
+    raise RuntimeError(
+        "Не удалось загрузить страницу. "
+        "Задайте ATB_COOKIES в секретах GitHub Actions."
+    )
 
 
 def parse_products(html: str) -> list[dict]:
@@ -124,7 +172,6 @@ def send_telegram_photo(token: str, chat_id: str, photo_url: str, caption: str):
         "parse_mode": "HTML",
     }
     resp = requests.post(url, json=payload, timeout=15)
-    # если фото не грузится — шлём текстом
     if not resp.ok:
         log.warning("Photo send failed (%s), falling back to text.", resp.status_code)
         return send_telegram_message(token, chat_id, caption)
