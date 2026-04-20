@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-ATB Market - парсер товаров дня с отправкой в Telegram.
+ATB Market — парсер товарів дня з відправкою в Telegram.
 """
 
 import os
@@ -18,7 +18,7 @@ logging.basicConfig(
 )
 log = logging.getLogger(__name__)
 
-# ─────────────────────── константы ───────────────────────
+# ─────────────────────── константи ───────────────────────
 
 ATB_URL = "https://www.atbmarket.com/promo/tovar_dnya"
 PRODUCT_BASE_URL = "https://www.atbmarket.com"
@@ -29,7 +29,7 @@ HEADERS = {
         "AppleWebKit/537.36 (KHTML, like Gecko) "
         "Chrome/147.0.0.0 Safari/537.36"
     ),
-    "Accept-Language": "ru,uk;q=0.9,en-US;q=0.8,en;q=0.7",
+    "Accept-Language": "uk,ru;q=0.9,en-US;q=0.8,en;q=0.7",
     "Accept": (
         "text/html,application/xhtml+xml,application/xml;"
         "q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,"
@@ -46,156 +46,156 @@ HEADERS = {
 
 # ─────────────────────── парсинг ─────────────────────────
 
-def parse_cookies_str(cookies_raw: str) -> dict:
-    """Парсит строку куков в словарь."""
-    cookies = {}
-    for part in cookies_raw.split(";"):
-        part = part.strip()
-        if "=" in part:
-            k, v = part.split("=", 1)
-            cookies[k.strip()] = v.strip()
-    return cookies
+def розпарсити_куки(рядок_куків: str) -> dict:
+    """Перетворює рядок куків на словник."""
+    куки = {}
+    for частина in рядок_куків.split(";"):
+        частина = частина.strip()
+        if "=" in частина:
+            ключ, значення = частина.split("=", 1)
+            куки[ключ.strip()] = значення.strip()
+    return куки
 
 
-def fetch_page(url: str) -> str:
+def завантажити_сторінку(url: str) -> str:
     """
-    Пробует загрузить страницу:
-    1. Через cloudscraper (обходит Cloudflare автоматически)
-    2. Если не получилось — через обычный requests с куками из ATB_COOKIES
+    Завантажує сторінку двома способами:
+    1. Через cloudscraper (обходить Cloudflare автоматично)
+    2. Якщо не вийшло — через звичайний requests з куками з ATB_COOKIES
     """
-    cookies_raw = os.environ.get("ATB_COOKIES", "").strip()
-    cookies = parse_cookies_str(cookies_raw) if cookies_raw else {}
+    рядок_куків = os.environ.get("ATB_COOKIES", "").strip()
+    куки = розпарсити_куки(рядок_куків) if рядок_куків else {}
 
-    # Попытка 1: cloudscraper
+    # Спроба 1: cloudscraper
     try:
-        log.info("Пробуем cloudscraper...")
+        log.info("Спробуємо cloudscraper...")
         scraper = cloudscraper.create_scraper(
             browser={"browser": "chrome", "platform": "windows", "mobile": False}
         )
-        if cookies:
-            scraper.cookies.update(cookies)
-        resp = scraper.get(url, headers=HEADERS, timeout=30)
-        resp.raise_for_status()
-        log.info("cloudscraper: успех (HTTP %d)", resp.status_code)
-        return resp.text
-    except Exception as e:
-        log.warning("cloudscraper не сработал: %s", e)
+        if куки:
+            scraper.cookies.update(куки)
+        відповідь = scraper.get(url, headers=HEADERS, timeout=30)
+        відповідь.raise_for_status()
+        log.info("cloudscraper: успіх (HTTP %d)", відповідь.status_code)
+        return відповідь.text
+    except Exception as помилка:
+        log.warning("cloudscraper не спрацював: %s", помилка)
 
-    # Попытка 2: обычный requests с куками
-    if cookies:
-        log.info("Пробуем requests + ATB_COOKIES...")
-        resp = requests.get(url, headers=HEADERS, cookies=cookies, timeout=30)
-        resp.raise_for_status()
-        log.info("requests+cookies: успех (HTTP %d)", resp.status_code)
-        return resp.text
+    # Спроба 2: звичайний requests з куками
+    if куки:
+        log.info("Спробуємо requests + ATB_COOKIES...")
+        відповідь = requests.get(url, headers=HEADERS, cookies=куки, timeout=30)
+        відповідь.raise_for_status()
+        log.info("requests+куки: успіх (HTTP %d)", відповідь.status_code)
+        return відповідь.text
 
     raise RuntimeError(
-        "Не удалось загрузить страницу. "
-        "Задайте ATB_COOKIES в секретах GitHub Actions."
+        "Не вдалося завантажити сторінку. "
+        "Задайте ATB_COOKIES у секретах GitHub Actions."
     )
 
 
-def parse_products(html: str) -> list[dict]:
-    soup = BeautifulSoup(html, "html.parser")
-    articles = soup.select("article.catalog-item")
+def розпарсити_товари(html: str) -> list[dict]:
+    суп = BeautifulSoup(html, "html.parser")
+    статті = суп.select("article.catalog-item")
 
-    products = []
-    for art in articles:
-        # название
-        title_tag = art.select_one(".catalog-item__title a")
-        if not title_tag:
+    товари = []
+    for стаття in статті:
+        # назва
+        тег_назви = стаття.select_one(".catalog-item__title a")
+        if not тег_назви:
             continue
-        title = title_tag.get_text(strip=True)
-        link = PRODUCT_BASE_URL + title_tag.get("href", "")
+        назва = тег_назви.get_text(strip=True)
+        посилання = PRODUCT_BASE_URL + тег_назви.get("href", "")
 
-        # скидка
-        label = art.select_one(".custom-product-label")
-        discount = label.get_text(strip=True) if label else ""
+        # знижка
+        мітка = стаття.select_one(".custom-product-label")
+        знижка = мітка.get_text(strip=True) if мітка else ""
 
-        # цены
-        price_new_tag = art.select_one(".product-price__top")
-        price_old_tag = art.select_one(".product-price__bottom")
+        # ціни
+        тег_нової_ціни = стаття.select_one(".product-price__top")
+        тег_старої_ціни = стаття.select_one(".product-price__bottom")
 
-        price_new = ""
-        if price_new_tag:
-            val = price_new_tag.get("value", "")
-            price_new = f"{float(val):.2f} грн" if val else price_new_tag.get_text(strip=True)
+        нова_ціна = ""
+        if тег_нової_ціни:
+            знач = тег_нової_ціни.get("value", "")
+            нова_ціна = f"{float(знач):.2f} грн" if знач else тег_нової_ціни.get_text(strip=True)
 
-        price_old = ""
-        if price_old_tag:
-            val = price_old_tag.get("value", "")
-            price_old = f"{float(val):.2f} грн" if val else price_old_tag.get_text(strip=True)
+        стара_ціна = ""
+        if тег_старої_ціни:
+            знач = тег_старої_ціни.get("value", "")
+            стара_ціна = f"{float(знач):.2f} грн" if знач else тег_старої_ціни.get_text(strip=True)
 
-        # изображение
-        img_tag = art.select_one("picture source[type='image/webp']")
-        img_url = img_tag.get("srcset", "") if img_tag else ""
-        if not img_url:
-            img_tag2 = art.select_one(".catalog-item__img")
-            img_url = img_tag2.get("src", "") if img_tag2 else ""
+        # зображення
+        тег_фото = стаття.select_one("picture source[type='image/webp']")
+        url_фото = тег_фото.get("srcset", "") if тег_фото else ""
+        if not url_фото:
+            тег_фото2 = стаття.select_one(".catalog-item__img")
+            url_фото = тег_фото2.get("src", "") if тег_фото2 else ""
 
-        products.append(
+        товари.append(
             {
-                "title": title,
-                "link": link,
-                "discount": discount,
-                "price_new": price_new,
-                "price_old": price_old,
-                "img_url": img_url,
+                "назва": назва,
+                "посилання": посилання,
+                "знижка": знижка,
+                "нова_ціна": нова_ціна,
+                "стара_ціна": стара_ціна,
+                "url_фото": url_фото,
             }
         )
 
-    return products
+    return товари
 
 
 # ────────────────────── Telegram ─────────────────────────
 
-def send_telegram_message(token: str, chat_id: str, text: str, parse_mode: str = "HTML"):
-    url = f"https://api.telegram.org/bot{token}/sendMessage"
-    payload = {
+def надіслати_повідомлення(токен: str, chat_id: str, текст: str, parse_mode: str = "HTML"):
+    url = f"https://api.telegram.org/bot{токен}/sendMessage"
+    дані = {
         "chat_id": chat_id,
-        "text": text,
+        "text": текст,
         "parse_mode": parse_mode,
         "disable_web_page_preview": True,
     }
-    resp = requests.post(url, json=payload, timeout=15)
-    if not resp.ok:
-        log.error("Telegram error: %s", resp.text)
-    return resp.ok
+    відповідь = requests.post(url, json=дані, timeout=15)
+    if not відповідь.ok:
+        log.error("Помилка Telegram: %s", відповідь.text)
+    return відповідь.ok
 
 
-def send_telegram_photo(token: str, chat_id: str, photo_url: str, caption: str):
-    url = f"https://api.telegram.org/bot{token}/sendPhoto"
-    payload = {
+def надіслати_фото(токен: str, chat_id: str, url_фото: str, підпис: str):
+    url = f"https://api.telegram.org/bot{токен}/sendPhoto"
+    дані = {
         "chat_id": chat_id,
-        "photo": photo_url,
-        "caption": caption,
+        "photo": url_фото,
+        "caption": підпис,
         "parse_mode": "HTML",
     }
-    resp = requests.post(url, json=payload, timeout=15)
-    if not resp.ok:
-        log.warning("Photo send failed (%s), falling back to text.", resp.status_code)
-        return send_telegram_message(token, chat_id, caption)
+    відповідь = requests.post(url, json=дані, timeout=15)
+    if not відповідь.ok:
+        log.warning("Не вдалося надіслати фото (HTTP %s), відправляємо текстом.", відповідь.status_code)
+        return надіслати_повідомлення(токен, chat_id, підпис)
     return True
 
 
-def build_caption(product: dict) -> str:
-    lines = []
-    if product["discount"]:
-        lines.append(f"🔥 <b>Скидка {product['discount']}</b>")
-    lines.append(f"📦 <b>{product['title']}</b>")
-    if product["price_new"]:
-        lines.append(f"💰 Цена: <b>{product['price_new']}</b>")
-    if product["price_old"]:
-        lines.append(f"🏷 Было: <s>{product['price_old']}</s>")
-    lines.append(f"🔗 <a href=\"{product['link']}\">Купить на ATB Market</a>")
-    return "\n".join(lines)
+def сформувати_підпис(товар: dict) -> str:
+    рядки = []
+    if товар["знижка"]:
+        рядки.append(f"🔥 <b>Знижка {товар['знижка']}</b>")
+    рядки.append(f"📦 <b>{товар['назва']}</b>")
+    if товар["нова_ціна"]:
+        рядки.append(f"💰 Ціна: <b>{товар['нова_ціна']}</b>")
+    if товар["стара_ціна"]:
+        рядки.append(f"🏷 Було: <s>{товар['стара_ціна']}</s>")
+    рядки.append(f"🔗 <a href=\"{товар['посилання']}\">Купити на ATB Market</a>")
+    return "\n".join(рядки)
 
 
-def build_header(products: list[dict]) -> str:
-    today = datetime.now().strftime("%d.%m.%Y")
+def сформувати_заголовок(товари: list[dict]) -> str:
+    сьогодні = datetime.now().strftime("%d.%m.%Y")
     return (
-        f"🛒 <b>Товар дня ATB Market — {today}</b>\n"
-        f"Найдено товаров со скидкой: {len(products)}\n"
+        f"🛒 <b>Товар дня ATB Market — {сьогодні}</b>\n"
+        f"Знайдено товарів зі знижкою: {len(товари)}\n"
         "─────────────────────"
     )
 
@@ -203,37 +203,37 @@ def build_header(products: list[dict]) -> str:
 # ────────────────────────── main ──────────────────────────
 
 def main():
-    token = os.environ.get("TELEGRAM_BOT_TOKEN")
+    токен = os.environ.get("TELEGRAM_BOT_TOKEN")
     chat_id = os.environ.get("TELEGRAM_CHAT_ID")
 
-    if not token or not chat_id:
-        log.error("Не заданы TELEGRAM_BOT_TOKEN или TELEGRAM_CHAT_ID")
+    if not токен or not chat_id:
+        log.error("Не задано TELEGRAM_BOT_TOKEN або TELEGRAM_CHAT_ID")
         sys.exit(1)
 
-    log.info("Загружаем страницу: %s", ATB_URL)
-    html = fetch_page(ATB_URL)
+    log.info("Завантажуємо сторінку: %s", ATB_URL)
+    html = завантажити_сторінку(ATB_URL)
 
-    log.info("Парсим товары...")
-    products = parse_products(html)
+    log.info("Парсимо товари...")
+    товари = розпарсити_товари(html)
 
-    if not products:
-        log.warning("Товары не найдены!")
-        send_telegram_message(token, chat_id, "⚠️ ATB: товары дня сегодня не найдены.")
+    if not товари:
+        log.warning("Товари не знайдено!")
+        надіслати_повідомлення(токен, chat_id, "⚠️ ATB: товари дня сьогодні не знайдено.")
         return
 
-    log.info("Найдено: %d товаров", len(products))
+    log.info("Знайдено: %d товарів", len(товари))
 
     # заголовок
-    send_telegram_message(token, chat_id, build_header(products))
+    надіслати_повідомлення(токен, chat_id, сформувати_заголовок(товари))
 
-    # каждый товар отдельным сообщением
-    for i, p in enumerate(products, 1):
-        log.info("[%d/%d] %s", i, len(products), p["title"])
-        caption = build_caption(p)
-        if p["img_url"]:
-            send_telegram_photo(token, chat_id, p["img_url"], caption)
+    # кожен товар окремим повідомленням
+    for і, товар in enumerate(товари, 1):
+        log.info("[%d/%d] %s", і, len(товари), товар["назва"])
+        підпис = сформувати_підпис(товар)
+        if товар["url_фото"]:
+            надіслати_фото(токен, chat_id, товар["url_фото"], підпис)
         else:
-            send_telegram_message(token, chat_id, caption)
+            надіслати_повідомлення(токен, chat_id, підпис)
 
     log.info("Готово!")
 
