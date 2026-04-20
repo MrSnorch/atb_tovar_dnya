@@ -3,7 +3,7 @@ name: ATB Товар дня → Telegram
 on:
   # Запуск каждый день в 09:00 по Киеву (UTC+3 → 06:00 UTC)
   schedule:
-    - cron: "0 6 * * *"
+    - cron: "0 4 * * *"
 
   # Ручной запуск из вкладки Actions
   workflow_dispatch:
