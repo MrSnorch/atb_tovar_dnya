@@ -1,0 +1,45 @@
+name: ATB Товар дня → Telegram
+
+on:
+  # Запуск каждый день в 09:00 по Киеву (UTC+3 → 06:00 UTC)
+  schedule:
+    - cron: "0 6 * * *"
+
+  # Ручной запуск из вкладки Actions
+  workflow_dispatch:
+
+jobs:
+  parse-and-send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      # 1. Клонируем репозиторий
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # 2. Устанавливаем Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # 3. Кешируем зависимости
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      # 4. Устанавливаем зависимости
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # 5. Запускаем парсер
+      - name: Run parser
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python parse_and_send.py
