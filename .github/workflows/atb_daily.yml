@@ -1,12 +1,16 @@
-name: ATB Товар дня → Telegram
+name: ATB Товар дня → Telegram (щогодинно)
 
 on:
-  # Запуск каждый день в 07:00 по Киеву (UTC+3 → 06:00 UTC)
+  # ─── Щогодинний запуск (перевіряє нові товари кожну годину) ───
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 * * * *"   # кожну годину, о :00
 
-  # Ручной запуск из вкладки Actions
+  # Ручний запуск з вкладки Actions
   workflow_dispatch:
+
+# Дозволяємо workflow писати у репо (для збереження стану)
+permissions:
+  contents: write
 
 jobs:
   parse-and-send:
@@ -14,17 +18,19 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      # 1. Клонируем репозиторий
+      # 1. Клонуємо репо (з токеном для подальшого push)
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      # 2. Устанавливаем Python
+      # 2. Встановлюємо Python
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      # 3. Кешируем зависимости
+      # 3. Кешуємо залежності
       - name: Cache pip
         uses: actions/cache@v4
         with:
@@ -33,14 +39,28 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-
 
-      # 4. Устанавливаем зависимости
+      # 4. Встановлюємо залежності
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      # 5. Запускаем парсер
+      # 5. Запускаємо парсер
       - name: Run parser
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           ATB_COOKIES: ${{ secrets.ATB_COOKIES }}
         run: python parse_and_send.py
+
+      # 6. Зберігаємо оновлений стан у репо
+      #    (фіксуємо тільки якщо файл стану змінився)
+      - name: Commit state to repo
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add state/sent_today.json
+          if git diff --staged --quiet; then
+            echo "Стан не змінився — коміт не потрібен."
+          else
+            git commit -m "chore: оновлення стану [skip ci]"
+            git push
+          fi
