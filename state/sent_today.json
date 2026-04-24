@@ -1,6 +1,9 @@
 {
-  "date": "",
-  "sent_ids": [],
-  "total_found": 0,
-  "scans": 0
+  "date": "2026-04-24",
+  "sent_ids": [
+    "product/cipsi-125-g-luks-hvilasti-zi-smakom-siru-mup",
+    "product/pivo-2-l-staropramen-svitle-nabir-4-h-048-l-zb"
+  ],
+  "total_found": 2,
+  "scans": 1
 }
