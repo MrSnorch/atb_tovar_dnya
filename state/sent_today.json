@@ -1,7 +1,29 @@
 {
   "date": "2026-04-25",
-  "sent_ids": [],
-  "products": {},
-  "total_found": 0,
-  "scans": 10
+  "sent_ids": [
+    "product/kovbasa-400-g-masna-lavkasvoa-linia-avstrijska-kz",
+    "product/pivo-4h05l-stella-artois-nabir-zb"
+  ],
+  "products": {
+    "product/pivo-4h05l-stella-artois-nabir-zb": {
+      "назва": "Пиво 4х0,5л Stella Artois НАБІР ж/б",
+      "знижка": "-50%",
+      "нова_ціна": "117.50 грн",
+      "стара_ціна": "235.90 грн",
+      "посилання": "https://www.atbmarket.com/product/pivo-4h05l-stella-artois-nabir-zb",
+      "url_фото": "https://src.zakaz.atbmarket.com/cache/photos/101105/catalog_list_101105.jpg",
+      "надіслано_о": "11:28"
+    },
+    "product/kovbasa-400-g-masna-lavkasvoa-linia-avstrijska-kz": {
+      "назва": "Ковбаса 400 г М'ясна лавка/Своя лінія Австрійська к/з",
+      "знижка": "-50%",
+      "нова_ціна": "99.90 грн",
+      "стара_ціна": "199.90 грн",
+      "посилання": "https://www.atbmarket.com/product/kovbasa-400-g-masna-lavkasvoa-linia-avstrijska-kz",
+      "url_фото": "https://src.zakaz.atbmarket.com/prodwebp/catalog_list/i2/catalog_list_1382.webp",
+      "надіслано_о": "11:28"
+    }
+  },
+  "total_found": 2,
+  "scans": 11
 }
