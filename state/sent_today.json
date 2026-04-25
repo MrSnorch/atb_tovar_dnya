@@ -1,29 +1,99 @@
 {
-  "date": "2026-04-25",
+  "date": "2026-04-26",
   "sent_ids": [
-    "product/kovbasa-400-g-masna-lavkasvoa-linia-avstrijska-kz",
-    "product/pivo-4h05l-stella-artois-nabir-zb"
+    "product/cukerki-70-g-rosen-yummi-gummi-kavun-mup",
+    "product/kava-225-g-ambassador-dark-roast-naturalna-smazena-melena-mup",
+    "product/kava-1-kg-ambassador-majestic-v-zernah",
+    "product/cukerki-70-g-rosen-yummi-gummi-sour-belts-zelejni",
+    "product/cukerki-70-g-rosen-yummi-mini-bear-mix-zelejni-mup",
+    "product/cukerki-70-g-rosen-yummi-gummi-pasta-mup",
+    "product/cukerki-70-g-rosen-yummi-gummi-banana-land-mup",
+    "product/kava-225-g-ambassador-premium-naturalna-smazena-melena",
+    "product/kava-200-g-ambassador-premium-naturalna-rozcinna-sublimovana"
   ],
   "products": {
-    "product/pivo-4h05l-stella-artois-nabir-zb": {
-      "назва": "Пиво 4х0,5л Stella Artois НАБІР ж/б",
+    "product/kava-225-g-ambassador-dark-roast-naturalna-smazena-melena-mup": {
+      "назва": "Кава 225 г Ambassador Dark Roast натуральна смажена мелена м/уп",
       "знижка": "-50%",
-      "нова_ціна": "117.50 грн",
-      "стара_ціна": "235.90 грн",
-      "посилання": "https://www.atbmarket.com/product/pivo-4h05l-stella-artois-nabir-zb",
-      "url_фото": "https://src.zakaz.atbmarket.com/cache/photos/101105/catalog_list_101105.jpg",
-      "надіслано_о": "11:28"
+      "нова_ціна": "128.90 грн",
+      "стара_ціна": "258.90 грн",
+      "посилання": "https://www.atbmarket.com/product/kava-225-g-ambassador-dark-roast-naturalna-smazena-melena-mup",
+      "url_фото": "https://src.zakaz.atbmarket.com/prodwebp/catalog_list/i27/catalog_list_57547.webp",
+      "надіслано_о": "21:24"
     },
-    "product/kovbasa-400-g-masna-lavkasvoa-linia-avstrijska-kz": {
-      "назва": "Ковбаса 400 г М'ясна лавка/Своя лінія Австрійська к/з",
+    "product/kava-225-g-ambassador-premium-naturalna-smazena-melena": {
+      "назва": "Кава 225 г Ambassador Premium натуральна смажена мелена",
       "знижка": "-50%",
-      "нова_ціна": "99.90 грн",
-      "стара_ціна": "199.90 грн",
-      "посилання": "https://www.atbmarket.com/product/kovbasa-400-g-masna-lavkasvoa-linia-avstrijska-kz",
-      "url_фото": "https://src.zakaz.atbmarket.com/prodwebp/catalog_list/i2/catalog_list_1382.webp",
-      "надіслано_о": "11:28"
+      "нова_ціна": "147.90 грн",
+      "стара_ціна": "296.90 грн",
+      "посилання": "https://www.atbmarket.com/product/kava-225-g-ambassador-premium-naturalna-smazena-melena",
+      "url_фото": "https://src.zakaz.atbmarket.com/prodwebp/catalog_list/i14/catalog_list_90199.webp",
+      "надіслано_о": "21:24"
+    },
+    "product/kava-200-g-ambassador-premium-naturalna-rozcinna-sublimovana": {
+      "назва": "Кава 200 г Ambassador Premium натуральна розчиннa сублімовaнa",
+      "знижка": "-50%",
+      "нова_ціна": "237.90 грн",
+      "стара_ціна": "477.50 грн",
+      "посилання": "https://www.atbmarket.com/product/kava-200-g-ambassador-premium-naturalna-rozcinna-sublimovana",
+      "url_фото": "https://src.zakaz.atbmarket.com/prodwebp/catalog_list/i13/catalog_list_113615.webp",
+      "надіслано_о": "21:24"
+    },
+    "product/cukerki-70-g-rosen-yummi-gummi-sour-belts-zelejni": {
+      "назва": "Цукерки 70 г Рошен Yummi Gummi Sour Belts желейні",
+      "знижка": "-50%",
+      "нова_ціна": "17.90 грн",
+      "стара_ціна": "35.90 грн",
+      "посилання": "https://www.atbmarket.com/product/cukerki-70-g-rosen-yummi-gummi-sour-belts-zelejni",
+      "url_фото": "https://src.zakaz.atbmarket.com/prodwebp/catalog_list/i21/catalog_list_22855.webp",
+      "надіслано_о": "21:24"
+    },
+    "product/cukerki-70-g-rosen-yummi-mini-bear-mix-zelejni-mup": {
+      "назва": "Цукерки 70 г Roshen Yummi Mini Bear Mix желейні м/уп",
+      "знижка": "-50%",
+      "нова_ціна": "17.90 грн",
+      "стара_ціна": "35.90 грн",
+      "посилання": "https://www.atbmarket.com/product/cukerki-70-g-rosen-yummi-mini-bear-mix-zelejni-mup",
+      "url_фото": "https://src.zakaz.atbmarket.com/prodwebp/catalog_list/i23/catalog_list_29303.webp",
+      "надіслано_о": "21:24"
+    },
+    "product/cukerki-70-g-rosen-yummi-gummi-kavun-mup": {
+      "назва": "Цукерки 70 г Roshen Yummi Gummi Кавун м/уп",
+      "знижка": "-50%",
+      "нова_ціна": "17.90 грн",
+      "стара_ціна": "35.90 грн",
+      "посилання": "https://www.atbmarket.com/product/cukerki-70-g-rosen-yummi-gummi-kavun-mup",
+      "url_фото": "https://src.zakaz.atbmarket.com/prodwebp/catalog_list/i34/catalog_list_69575.webp",
+      "надіслано_о": "21:24"
+    },
+    "product/cukerki-70-g-rosen-yummi-gummi-banana-land-mup": {
+      "назва": "Цукерки 70 г Roshen Yummi Gummi Banana Land м/уп",
+      "знижка": "-50%",
+      "нова_ціна": "17.90 грн",
+      "стара_ціна": "35.90 грн",
+      "посилання": "https://www.atbmarket.com/product/cukerki-70-g-rosen-yummi-gummi-banana-land-mup",
+      "url_фото": "https://src.zakaz.atbmarket.com/prodwebp/catalog_list/i24/catalog_list_71827.webp",
+      "надіслано_о": "21:24"
+    },
+    "product/cukerki-70-g-rosen-yummi-gummi-pasta-mup": {
+      "назва": "Цукерки 70 г Roshen Yummi Gummi Паста м/уп",
+      "знижка": "-50%",
+      "нова_ціна": "17.90 грн",
+      "стара_ціна": "35.90 грн",
+      "посилання": "https://www.atbmarket.com/product/cukerki-70-g-rosen-yummi-gummi-pasta-mup",
+      "url_фото": "https://src.zakaz.atbmarket.com/prodwebp/catalog_list/i34/catalog_list_68957.webp",
+      "надіслано_о": "21:24"
+    },
+    "product/kava-1-kg-ambassador-majestic-v-zernah": {
+      "назва": "Кава 1 кг Ambassador Majestic в зернах",
+      "знижка": "-50%",
+      "нова_ціна": "530.90 грн",
+      "стара_ціна": "1063.70 грн",
+      "посилання": "https://www.atbmarket.com/product/kava-1-kg-ambassador-majestic-v-zernah",
+      "url_фото": "https://src.zakaz.atbmarket.com/prodwebp/catalog_list/i7/catalog_list_86655.webp",
+      "надіслано_о": "21:24"
     }
   },
-  "total_found": 2,
-  "scans": 20
+  "total_found": 9,
+  "scans": 1
 }
