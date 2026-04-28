@@ -1,29 +1,7 @@
 {
-  "date": "2026-04-28",
-  "sent_ids": [
-    "product/loksina-65-g-glads-risova-z-sousom-fo-bo-mup",
-    "product/napij-2-l-zivcik-gazovanij"
-  ],
-  "products": {
-    "product/loksina-65-g-glads-risova-z-sousom-fo-bo-mup": {
-      "назва": "Локшина 65 г Glads рисова з соусом ФО БО м/уп",
-      "знижка": "-50%",
-      "нова_ціна": "23.90 грн",
-      "стара_ціна": "48.70 грн",
-      "посилання": "https://www.atbmarket.com/product/loksina-65-g-glads-risova-z-sousom-fo-bo-mup",
-      "фото": "https://src.zakaz.atbmarket.com/prodwebp/catalog_list/i34/catalog_list_68881.webp",
-      "надіслано_о": "00:01"
-    },
-    "product/napij-2-l-zivcik-gazovanij": {
-      "назва": "Напій 2 л Живчик газований",
-      "знижка": "-50%",
-      "нова_ціна": "28.90 грн",
-      "стара_ціна": "58.30 грн",
-      "посилання": "https://www.atbmarket.com/product/napij-2-l-zivcik-gazovanij",
-      "фото": "https://src.zakaz.atbmarket.com/prodwebp/catalog_list/i15/catalog_list_69449.webp",
-      "надіслано_о": "00:01"
-    }
-  },
-  "total_found": 2,
-  "scans": 24
+  "date": "2026-04-29",
+  "sent_ids": [],
+  "products": {},
+  "total_found": 0,
+  "scans": 1
 }
