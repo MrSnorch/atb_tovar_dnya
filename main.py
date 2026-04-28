@@ -354,11 +354,43 @@ def підпис_акції(а: dict) -> str:
     return "\n".join(рядки)
 
 
+def очистити_протерміновані_акції(стан: dict) -> list[str]:
+    """Видаляє з seen_slugs і promos акції, у яких end_time вже минув.
+    Повертає список видалених слагів, щоб при повторній появі вони
+    знову спрацьовували як нові."""
+    зараз = київський_час().replace(tzinfo=None)
+    збережені = стан.get("promos", {})
+    видалені = []
+    for slug in list(стан.get("seen_slugs", [])):
+        end_raw = збережені.get(slug, {}).get("end_time", "")
+        if not end_raw:
+            continue
+        try:
+            end_dt = datetime.strptime(end_raw, "%b %d, %Y %H:%M:%S")
+        except ValueError:
+            continue
+        if зараз >= end_dt:
+            log.info("Акція закінчилась — видаляємо зі стану: %s (end_time=%s)", slug, end_raw)
+            видалені.append(slug)
+    for slug in видалені:
+        стан["seen_slugs"].remove(slug)
+        збережені.pop(slug, None)
+    return видалені
+
+
 def запустити_моніторинг_акцій(токен: str, chat_id: str):
     log.info("─── Нові акції ───")
 
     порожній = {"seen_slugs": [], "promos": {}, "last_check": ""}
     стан = прочитати_стан(STATE_PROMOS, порожній)
+
+    # Видаляємо протерміновані акції ДО перевірки нових —
+    # так акція з тим самим слагом, але новим контентом, знову
+    # буде вважатися невідомою і породить сповіщення.
+    видалені = очистити_протерміновані_акції(стан)
+    if видалені:
+        log.info("Видалено протермінованих: %d (%s)", len(видалені), ", ".join(видалені))
+
     відомі = set(стан["seen_slugs"])
     збережені = стан["promos"]
     перший_запуск = len(відомі) == 0
