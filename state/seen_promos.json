@@ -1,15 +1,14 @@
 {
   "seen_slugs": [
-    "znuzhki_jacobs",
-    "Pashalna_Coca-Cola",
     "vinasvitu",
-    "Stalker",
     "sim_dniv",
-    "VlasniTorhoviMarky",
     "puvnaekonomia",
-    "sale_tovari",
+    "micni",
+    "VlasniTorhoviMarky",
+    "Stalker",
+    "Pashalna_Coca-Cola",
     "economy",
-    "micni"
+    "sale_tovari"
   ],
   "promos": {
     "Stalker": {
@@ -19,46 +18,11 @@
       "end_time": "Jun 09, 2026 00:00:00",
       "first_seen": "2026-04-26 17:24"
     },
-    "economy": {
-      "title": "Акція \"Економія\"",
-      "url": "https://www.atbmarket.com/promo/economy",
-      "img": "https://src.zakaz.atbmarket.com/cache/promo_page/origin_77.jpg",
-      "end_time": "Apr 29, 2026 00:00:00",
-      "first_seen": "2026-04-26 17:24"
-    },
-    "sale_tovari": {
-      "title": "Акційні пропозиції",
-      "url": "https://www.atbmarket.com/promo/sale_tovari",
-      "img": "https://src.zakaz.atbmarket.com/cache/promo_page/origin_125.png",
-      "end_time": "Apr 29, 2026 00:00:00",
-      "first_seen": "2026-04-26 17:24"
-    },
-    "micni": {
-      "title": "Ексклюзивна знижка з Карткою АТБ!",
-      "url": "https://www.atbmarket.com/promo/micni",
-      "img": "https://src.zakaz.atbmarket.com/cache/promo_page/origin_163.jpg",
-      "end_time": "Apr 29, 2026 00:00:00",
-      "first_seen": "2026-04-26 17:24"
-    },
-    "VlasniTorhoviMarky": {
-      "title": "Власні торгові марки АТБ",
-      "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
-      "img": "https://src.zakaz.atbmarket.com/cache/promo_page/origin_437.png",
-      "end_time": "Apr 29, 2026 00:00:00",
-      "first_seen": "2026-04-26 17:24"
-    },
     "sim_dniv": {
       "title": "Акція \"7 днів\"",
       "url": "https://www.atbmarket.com/promo/sim_dniv",
       "img": "https://src.zakaz.atbmarket.com/cache/promo_page/origin_165.jpg",
       "end_time": "Apr 30, 2026 00:00:00",
-      "first_seen": "2026-04-26 17:24"
-    },
-    "znuzhki_jacobs": {
-      "title": "Ексклюзивні кавові знижки від Jacobs!",
-      "url": "https://www.atbmarket.com/promo/znuzhki_jacobs",
-      "img": "https://src.zakaz.atbmarket.com/cache/promo_page/origin_377.jpg",
-      "end_time": "Apr 29, 2026 00:00:00",
       "first_seen": "2026-04-26 17:24"
     },
     "Pashalna_Coca-Cola": {
@@ -81,7 +45,35 @@
       "img": "https://src.zakaz.atbmarket.com/cache/promo_page/origin_453.png",
       "end_time": "May 13, 2026 00:00:00",
       "first_seen": "2026-04-29 00:01"
+    },
+    "economy": {
+      "title": "Акція \"Економія\"",
+      "url": "https://www.atbmarket.com/promo/economy",
+      "img": "https://src.zakaz.atbmarket.com/cache/promo_page/origin_77.jpg",
+      "end_time": "May 06, 2026 00:00:00",
+      "first_seen": "2026-04-29 00:16"
+    },
+    "sale_tovari": {
+      "title": "Акційні пропозиції",
+      "url": "https://www.atbmarket.com/promo/sale_tovari",
+      "img": "https://src.zakaz.atbmarket.com/cache/promo_page/origin_125.png",
+      "end_time": "May 13, 2026 00:00:00",
+      "first_seen": "2026-04-29 00:16"
+    },
+    "micni": {
+      "title": "Ексклюзивна знижка з Карткою АТБ!",
+      "url": "https://www.atbmarket.com/promo/micni",
+      "img": "https://src.zakaz.atbmarket.com/cache/promo_page/origin_163.jpg",
+      "end_time": "May 06, 2026 00:00:00",
+      "first_seen": "2026-04-29 00:16"
+    },
+    "VlasniTorhoviMarky": {
+      "title": "Власні торгові марки АТБ",
+      "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
+      "img": "https://src.zakaz.atbmarket.com/cache/promo_page/origin_437.png",
+      "end_time": "May 06, 2026 00:00:00",
+      "first_seen": "2026-04-29 00:16"
     }
   },
-  "last_check": "2026-04-29 00:01"
+  "last_check": "2026-04-29 00:16"
 }
