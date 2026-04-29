@@ -10,7 +10,8 @@
     "sale_tovari",
     "Stalker",
     "vinasvitu",
-    "znuzhki_jacobs"
+    "znuzhki_jacobs",
+    "Jacobs"
   ],
   "promos": {
     "Stalker": {
@@ -78,7 +79,13 @@
       "url": "https://www.atbmarket.com/promo/znuzhki_jacobs",
       "end_time": "May 13, 2026 00:00:00",
       "first_seen": "2026-04-29 16:01"
+    },
+    "Jacobs": {
+      "title": "Jacobs Кавові знижки",
+      "url": "https://www.atbmarket.com/promo/Jacobs",
+      "end_time": "May 13, 2026 00:00:00",
+      "first_seen": "2026-04-29 17:01"
     }
   },
-  "last_check": "2026-04-29 16:01"
+  "last_check": "2026-04-29 17:01"
 }
