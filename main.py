@@ -220,9 +220,21 @@ def tg_edit(токен: str, chat_id: str, message_id: int, текст: str) -> 
 
 
 def tg_send_or_edit(токен: str, chat_id: str, message_id: int | None, текст: str) -> int | None:
-    """Редагує повідомлення якщо є message_id, інакше відправляє нове."""
+    """Редагує повідомлення якщо є message_id, інакше відправляє нове.
+    Обрізка по рядках — HTML-теги не розриваються посередині.
+    """
     if len(текст) > MAX_MSG_LEN:
-        текст = текст[:MAX_MSG_LEN - 3] + "…"
+        рядки = текст.splitlines()
+        результат = []
+        загальна = 0
+        for рядок in рядки:
+            довжина = len(рядок) + 1
+            if загальна + довжина > MAX_MSG_LEN - 4:
+                результат.append("…")
+                break
+            результат.append(рядок)
+            загальна += довжина
+        текст = '\n'.join(результат)
 
     if message_id:
         success = tg_edit(токен, chat_id, message_id, текст)
@@ -423,8 +435,27 @@ def очистити_протерміновані_акції(стан: dict) -> 
     return видалені
 
 
+def _кінець_для_сортування(end_time: str) -> datetime:
+    """Повертає datetime для сортування; без дати — у кінець списку."""
+    if not end_time:
+        return datetime.max.replace(tzinfo=None)
+    try:
+        return datetime.strptime(end_time, "%b %d, %Y %H:%M:%S")
+    except ValueError:
+        return datetime.max.replace(tzinfo=None)
+
+
+def _видима_довжина(html_рядок: str) -> int:
+    """Підраховує кількість видимих символів (без HTML-тегів)."""
+    import re
+    return len(re.sub(r"<[^>]+>", "", html_рядок))
+
+
 def сформувати_повідомлення_акцій(акції: list[dict], є_товар_дня: bool = False) -> str:
     актуальні = [а for а in акції if а["slug"] not in ВИКЛЮЧЕНІ_СЛАГИ]
+
+    # Сортуємо за датою закінчення — найближча зверху
+    актуальні.sort(key=lambda а: _кінець_для_сортування(а["end_time"]))
 
     кількість = len(актуальні) + (1 if є_товар_дня else 0)
     рядки = [f"📣 <b>Актуальні акції — {кількість} шт</b>"]
