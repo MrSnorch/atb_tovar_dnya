@@ -9,7 +9,8 @@
     "Pashalna_Coca-Cola",
     "sale_tovari",
     "Stalker",
-    "vinasvitu"
+    "vinasvitu",
+    "znuzhki_jacobs"
   ],
   "promos": {
     "Stalker": {
@@ -71,7 +72,13 @@
       "url": "https://www.atbmarket.com/promo/kupyidrugu",
       "end_time": "May 13, 2026 00:00:00",
       "first_seen": "2026-04-29 11:01"
+    },
+    "znuzhki_jacobs": {
+      "title": "Ексклюзивні кавові знижки від Jacobs!",
+      "url": "https://www.atbmarket.com/promo/znuzhki_jacobs",
+      "end_time": "May 13, 2026 00:00:00",
+      "first_seen": "2026-04-29 16:01"
     }
   },
-  "last_check": "2026-04-29 15:19"
+  "last_check": "2026-04-29 16:01"
 }
