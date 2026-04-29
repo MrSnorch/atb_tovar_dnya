@@ -4,8 +4,10 @@ ATB Market — єдиний скрипт.
 Запускається щогодинно через cron-job.org → GitHub Actions workflow_dispatch.
 
 Виконує дві задачі:
-  1. Товар дня  — парсить /promo/tovar_dnya, шле нові товари зі знижкою.
-  2. Нові акції — парсить /promo/all, шле сповіщення про нові каталоги.
+  1. Товар дня  — парсить /promo/tovar_dnya, шле нові товари зі знижкою
+                  окремими повідомленнями (як в оригіналі).
+  2. Актуальні акції — парсить /promo/all, підтримує ОДНЕ повідомлення
+                  яке редагується щогодини зі списком усіх акцій і датами.
 """
 
 import os
@@ -34,6 +36,10 @@ URL_PROMOS      = f"{BASE_URL}/promo/all"
 
 STATE_TOVAR     = "state/sent_today.json"
 STATE_PROMOS    = "state/seen_promos.json"
+
+MAX_MSG_LEN     = 4096
+
+ВИКЛЮЧЕНІ_СЛАГИ = {"TovaR_dnyA"}
 
 HEADERS = {
     "User-Agent": (
@@ -116,13 +122,13 @@ def завантажити_сторінку(url: str) -> str:
 def прочитати_стан(path: str, порожній: dict) -> dict:
     if not os.path.exists(path):
         log.info("[%s] не знайдено — перший запуск.", path)
-        return порожній
+        return порожній.copy()
     try:
         with open(path, encoding="utf-8") as f:
             return json.load(f)
     except Exception as e:
         log.warning("[%s] помилка читання: %s", path, e)
-        return порожній
+        return порожній.copy()
 
 
 def зберегти_стан(path: str, стан: dict):
@@ -169,8 +175,66 @@ def tg_photo(токен: str, chat_id: str, photo: str, підпис: str) -> bo
     return True
 
 
+def tg_send(токен: str, chat_id: str, текст: str) -> int | None:
+    """Відправляє нове повідомлення. Повертає message_id або None."""
+    resp = requests.post(
+        f"https://api.telegram.org/bot{токен}/sendMessage",
+        json={
+            "chat_id": chat_id,
+            "text": текст,
+            "parse_mode": "HTML",
+            "disable_web_page_preview": True,
+        },
+        timeout=15,
+    )
+    if not resp.ok:
+        log.error("sendMessage: %s", resp.text)
+        return None
+    msg_id = resp.json().get("result", {}).get("message_id")
+    log.info("sendMessage OK → message_id=%s", msg_id)
+    return msg_id
+
+
+def tg_edit(токен: str, chat_id: str, message_id: int, текст: str) -> bool:
+    """Редагує існуюче повідомлення. Повертає True при успіху."""
+    resp = requests.post(
+        f"https://api.telegram.org/bot{токен}/editMessageText",
+        json={
+            "chat_id": chat_id,
+            "message_id": message_id,
+            "text": текст,
+            "parse_mode": "HTML",
+            "disable_web_page_preview": True,
+        },
+        timeout=15,
+    )
+    if not resp.ok:
+        err = resp.json().get("description", resp.text)
+        if "message is not modified" in err.lower():
+            log.info("editMessageText: текст не змінився — ОК")
+            return True
+        log.error("editMessageText: %s", err)
+        return False
+    log.info("editMessageText OK → message_id=%s", message_id)
+    return True
+
+
+def tg_send_or_edit(токен: str, chat_id: str, message_id: int | None, текст: str) -> int | None:
+    """Редагує повідомлення якщо є message_id, інакше відправляє нове."""
+    if len(текст) > MAX_MSG_LEN:
+        текст = текст[:MAX_MSG_LEN - 3] + "…"
+
+    if message_id:
+        success = tg_edit(токен, chat_id, message_id, текст)
+        if success:
+            return message_id
+        log.warning("Редагування не вдалось — відправляємо нове повідомлення.")
+
+    return tg_send(токен, chat_id, текст)
+
+
 # ═══════════════════════════════════════════════════════════
-#  ЗАДАЧА 1: ТОВАР ДНЯ
+#  ЗАДАЧА 1: ТОВАР ДНЯ (окремі повідомлення, як в оригіналі)
 # ═══════════════════════════════════════════════════════════
 
 def парсити_товари_дня(html: str) -> list[dict]:
@@ -229,20 +293,26 @@ def підпис_товару(т: dict, пропущений: bool = False) -> s
     return "\n".join(рядки)
 
 
-def запустити_товар_дня(токен: str, chat_id: str):
+def запустити_товар_дня(токен: str, chat_id: str, стан: dict, сьогодні: str):
     log.info("─── Товар дня ───")
-
-    порожній = {"date": "", "sent_ids": [], "products": {}, "total_found": 0, "scans": 0}
-    стан = прочитати_стан(STATE_TOVAR, порожній)
-    сьогодні = сьогодні_дата()
 
     if стан.get("date") != сьогодні:
         log.info("Новий день — скидаємо стан товарів.")
-        стан = {**порожній, "date": сьогодні}
+        # зберігаємо promos_message_id щоб не загубити
+        promos_msg_id = стан.get("promos_message_id")
+        стан.clear()
+        стан.update({
+            "date": сьогодні,
+            "sent_ids": [],
+            "products": {},
+            "total_found": 0,
+            "scans": 0,
+            "promos_message_id": promos_msg_id,
+        })
 
-    вже_надіслані  = set(стан["sent_ids"])
-    збережені      = стан["products"]
-    номер_скану    = стан["scans"] + 1
+    вже_надіслані = set(стан.get("sent_ids", []))
+    збережені     = стан.get("products", {})
+    номер_скану   = стан.get("scans", 0) + 1
 
     html = завантажити_сторінку(URL_TOVAR_DNYA)
     всі  = парсити_товари_дня(html)
@@ -255,29 +325,24 @@ def запустити_товар_дня(токен: str, chat_id: str):
     if not нові:
         log.info("Товар дня: нічого нового.")
         стан["scans"] = номер_скану
-        зберегти_стан(STATE_TOVAR, стан)
         return
 
-    # заголовок
     сьогодні_str = київський_час().strftime("%d.%m.%Y")
     час_str      = київський_час().strftime("%H:%M")
     якщо_перший  = номер_скану == 1
     заголовок = (
         f"🛒 <b>Товар дня — {сьогодні_str}</b>\n"
-        f"Знайдено товарів зі знижкою: {len(нові)}\n"
-        "─────────────────────"
+        f"Знайдено товарів зі знижкою: {len(нові)}"
     ) if якщо_перший else (
         f"🔔 <b>Товар дня — нові ({час_str})</b>\n"
-        f"Нових у цьому скані: {len(нові)} (всього сьогодні: {len(вже_надіслані) + len(нові)})\n"
-        "─────────────────────"
+        f"Нових у цьому скані: {len(нові)} (всього сьогодні: {len(вже_надіслані) + len(нові)})"
     )
     tg_text(токен, chat_id, заголовок)
 
     нові_ід = []
     for і, т in enumerate(нові, 1):
         log.info("[%d/%d] %s", і, len(нові), т["назва"])
-        пропущений = номер_скану > 1
-        підпис = підпис_товару(т, пропущений)
+        підпис = підпис_товару(т, пропущений=(номер_скану > 1))
         if т["фото"]:
             tg_photo(токен, chat_id, т["фото"], підпис)
         else:
@@ -296,12 +361,11 @@ def запустити_товар_дня(токен: str, chat_id: str):
     стан["products"]    = збережені
     стан["total_found"] = len(всі)
     стан["scans"]       = номер_скану
-    зберегти_стан(STATE_TOVAR, стан)
     log.info("Товар дня: надіслано %d товарів.", len(нові))
 
 
 # ═══════════════════════════════════════════════════════════
-#  ЗАДАЧА 2: НОВІ АКЦІЙНІ КАТАЛОГИ
+#  ЗАДАЧА 2: АКЦІЇ — одне повідомлення, редагується щогодини
 # ═══════════════════════════════════════════════════════════
 
 def парсити_акції(html: str) -> list[dict]:
@@ -313,22 +377,18 @@ def парсити_акції(html: str) -> list[dict]:
             continue
         href = тег_а.get("href", "")
         slug = href.rstrip("/").split("/")[-1] if href else ""
-        if not slug:
+        if not slug or slug in ВИКЛЮЧЕНІ_СЛАГИ:
             continue
 
         тег_назви = елемент.select_one(".actions-list__title a")
-        title = тег_назви.get_text(strip=True) if тег_назви else slug
-
-        тег_img = елемент.select_one(".actions-list__img img")
-        img = тег_img.get("src", "") if тег_img else ""
+        title     = тег_назви.get_text(strip=True) if тег_назви else slug
 
         тег_таймера = елемент.select_one(".actionsTimer")
-        end_time = тег_таймера.get("data-time", "") if тег_таймера else ""
+        end_time    = тег_таймера.get("data-time", "") if тег_таймера else ""
 
         результат.append({
             "slug": slug, "title": title,
-            "url": BASE_URL + href, "img": img,
-            "end_time": end_time,
+            "url": BASE_URL + href, "end_time": end_time,
         })
     return результат
 
@@ -342,25 +402,10 @@ def форматувати_кінець(s: str) -> str:
         return s
 
 
-def підпис_акції(а: dict) -> str:
-    кінець = форматувати_кінець(а["end_time"])
-    рядки = [
-        "🆕 <b>Нова акція!</b>",
-        f"📣 <b>{а['title']}</b>",
-    ]
-    if кінець:
-        рядки.append(f"📅 Діє до: <b>{кінець}</b>")
-    рядки.append(f"🔗 <a href=\"{а['url']}\">Переглянути акцію</a>")
-    return "\n".join(рядки)
-
-
 def очистити_протерміновані_акції(стан: dict) -> list[str]:
-    """Видаляє з seen_slugs і promos акції, у яких end_time вже минув.
-    Повертає список видалених слагів, щоб при повторній появі вони
-    знову спрацьовували як нові."""
-    зараз = київський_час().replace(tzinfo=None)
+    зараз     = київський_час().replace(tzinfo=None)
     збережені = стан.get("promos", {})
-    видалені = []
+    видалені  = []
     for slug in list(стан.get("seen_slugs", [])):
         end_raw = збережені.get(slug, {}).get("end_time", "")
         if not end_raw:
@@ -370,7 +415,7 @@ def очистити_протерміновані_акції(стан: dict) -> 
         except ValueError:
             continue
         if зараз >= end_dt:
-            log.info("Акція закінчилась — видаляємо зі стану: %s (end_time=%s)", slug, end_raw)
+            log.info("Акція закінчилась — видаляємо: %s", slug)
             видалені.append(slug)
     for slug in видалені:
         стан["seen_slugs"].remove(slug)
@@ -378,91 +423,66 @@ def очистити_протерміновані_акції(стан: dict) -> 
     return видалені
 
 
-def запустити_моніторинг_акцій(токен: str, chat_id: str):
-    log.info("─── Нові акції ───")
+def сформувати_повідомлення_акцій(акції: list[dict]) -> str:
+    актуальні = [а for а in акції if а["slug"] not in ВИКЛЮЧЕНІ_СЛАГИ]
 
-    порожній = {"seen_slugs": [], "promos": {}, "last_check": ""}
-    стан = прочитати_стан(STATE_PROMOS, порожній)
+    рядки = [f"📣 <b>Актуальні акції — {len(актуальні)} шт</b>"]
 
-    # Видаляємо протерміновані акції ДО перевірки нових —
-    # так акція з тим самим слагом, але новим контентом, знову
-    # буде вважатися невідомою і породить сповіщення.
-    видалені = очистити_протерміновані_акції(стан)
-    if видалені:
-        log.info("Видалено протермінованих: %d (%s)", len(видалені), ", ".join(видалені))
+    for а in актуальні:
+        кінець = форматувати_кінець(а["end_time"])
+        рядок  = f"<a href=\"{а['url']}\">{а['title']}</a>"
+        if кінець:
+            рядок += f" до {кінець}"
+        рядки.append(рядок)
 
-    відомі = set(стан["seen_slugs"])
-    збережені = стан["promos"]
-    перший_запуск = len(відомі) == 0
+    return "\n".join(рядки)
+
+
+def запустити_акції(токен: str, chat_id: str, стан_товар: dict, стан_акції: dict):
+    log.info("─── Актуальні акції ───")
+
+    очистити_протерміновані_акції(стан_акції)
 
     html = завантажити_сторінку(URL_PROMOS)
     акції = парсити_акції(html)
-    log.info("Знайдено акцій на сайті: %d", len(акції))
+    log.info("Знайдено акцій: %d", len(акції))
 
-    if not акції:
-        log.warning("Акції не розпарсились — можливо змінилась структура сторінки.")
-        стан["last_check"] = зараз_рядок()
-        зберегти_стан(STATE_PROMOS, стан)
-        return
-
+    # Оновлюємо стан акцій, шлемо окремі повідомлення про нові
     зараз = зараз_рядок()
+    збережені = стан_акції.get("promos", {})
+    перший_запуск = len(стан_акції.get("seen_slugs", [])) == 0
 
-    ВИКЛЮЧЕНІ_СЛАГИ = {"TovaR_dnyA"}
-
-    if перший_запуск:
-        акції_для_збереження = [а for а in акції if а["slug"] not in ВИКЛЮЧЕНІ_СЛАГИ]
-        log.info("Перший запуск — зберігаємо %d акцій як відомі.", len(акції_для_збереження))
-        for а in акції_для_збереження:
-            збережені[а["slug"]] = {
-                "title": а["title"], "url": а["url"],
-                "img": а["img"], "end_time": а["end_time"],
-                "first_seen": зараз,
-            }
-        стан["seen_slugs"] = [а["slug"] for а in акції_для_збереження]
-        стан["promos"]     = збережені
-        стан["last_check"] = зараз
-        зберегти_стан(STATE_PROMOS, стан)
-
-        # сповіщення про запуск
-        рядки_акцій = ""
-        for а in акції_для_збереження:
-            кінець = форматувати_кінець(а["end_time"])
-            рядок = f"• <a href=\"{а['url']}\">{а['title']}</a>"
-            if кінець:
-                рядок += f" (до {кінець})"
-            рядки_акцій += рядок + "\n"
-
-        tg_text(токен, chat_id,
-            f"🛒 <b>Актуальні акції: {len(акції_для_збереження)}</b>\n"
-            "─────────────────────\n"
-            + рядки_акцій
-        )
-        return
-
-    нові = [а for а in акції if а["slug"] not in відомі and а["slug"] not in ВИКЛЮЧЕНІ_СЛАГИ]
-    log.info("Нових акцій: %d", len(нові))
-
-    for а in нові:
-        log.info("НОВА АКЦІЯ: %s | %s", а["slug"], а["title"])
-        підпис = підпис_акції(а)
-        if а["img"]:
-            tg_photo(токен, chat_id, а["img"], підпис)
-        else:
-            tg_text(токен, chat_id, підпис)
+    for а in акції:
+        is_new = а["slug"] not in стан_акції.get("seen_slugs", [])
+        if is_new:
+            стан_акції.setdefault("seen_slugs", []).append(а["slug"])
+            # Не шлемо сповіщення при першому запуску — тільки запам'ятовуємо
+            if not перший_запуск:
+                log.info("Нова акція: %s | %s", а["slug"], а["title"])
+                кінець = форматувати_кінець(а["end_time"])
+                рядки = [
+                    "🆕 <b>Нова акція!</b>",
+                    f"📣 <b>{а['title']}</b>",
+                ]
+                if кінець:
+                    рядки.append(f"📅 Діє до: <b>{кінець}</b>")
+                рядки.append(f"🔗 <a href=\"{а['url']}\">Переглянути акцію</a>")
+                tg_text(токен, chat_id, "\n".join(рядки))
         збережені[а["slug"]] = {
-            "title": а["title"], "url": а["url"],
-            "img": а["img"], "end_time": а["end_time"],
-            "first_seen": зараз,
+            "title":      а["title"],
+            "url":        а["url"],
+            "end_time":   а["end_time"],
+            "first_seen": збережені.get(а["slug"], {}).get("first_seen", зараз),
         }
-        відомі.add(а["slug"])
+    стан_акції["promos"]     = збережені
+    стан_акції["last_check"] = зараз
 
-    if not нові:
-        log.info("Нових акцій немає.")
-
-    стан["seen_slugs"] = list(відомі)
-    стан["promos"]     = збережені
-    стан["last_check"] = зараз
-    зберегти_стан(STATE_PROMOS, стан)
+    # Відправляємо або редагуємо єдине повідомлення
+    message_id = стан_товар.get("promos_message_id")
+    текст = сформувати_повідомлення_акцій(акції)
+    новий_id = tg_send_or_edit(токен, chat_id, message_id, текст)
+    стан_товар["promos_message_id"] = новий_id
+    log.info("Акції: повідомлення оновлено (message_id=%s)", новий_id)
 
 
 # ═══════════════════════════════════════════════════════════
@@ -477,8 +497,22 @@ def main():
         log.error("Не задано TELEGRAM_BOT_TOKEN або TELEGRAM_CHAT_ID")
         sys.exit(1)
 
-    запустити_товар_дня(токен, chat_id)
-    запустити_моніторинг_акцій(токен, chat_id)
+    сьогодні = сьогодні_дата()
+
+    порожній_товар = {
+        "date": "", "sent_ids": [], "products": {},
+        "total_found": 0, "scans": 0, "promos_message_id": None,
+    }
+    стан_товар = прочитати_стан(STATE_TOVAR, порожній_товар)
+
+    порожній_акції = {"seen_slugs": [], "promos": {}, "last_check": ""}
+    стан_акції = прочитати_стан(STATE_PROMOS, порожній_акції)
+
+    запустити_товар_дня(токен, chat_id, стан_товар, сьогодні)
+    запустити_акції(токен, chat_id, стан_товар, стан_акції)
+
+    зберегти_стан(STATE_TOVAR, стан_товар)
+    зберегти_стан(STATE_PROMOS, стан_акції)
     log.info("═══ Готово ═══")
 
 
