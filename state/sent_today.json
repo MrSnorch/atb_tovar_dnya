@@ -1,7 +1,8 @@
 {
-  "date": "2026-04-29",
+  "date": "",
   "sent_ids": [],
   "products": {},
   "total_found": 0,
-  "scans": 17
+  "scans": 0,
+  "promos_message_id": null
 }
