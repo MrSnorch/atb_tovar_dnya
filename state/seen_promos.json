@@ -1,14 +1,15 @@
 {
   "seen_slugs": [
-    "puvnaekonomia",
-    "Stalker",
-    "VlasniTorhoviMarky",
-    "sale_tovari",
-    "vinasvitu",
     "sim_dniv",
-    "Pashalna_Coca-Cola",
     "economy",
-    "micni"
+    "vinasvitu",
+    "sale_tovari",
+    "VlasniTorhoviMarky",
+    "Stalker",
+    "micni",
+    "Pashalna_Coca-Cola",
+    "kupyidrugu",
+    "puvnaekonomia"
   ],
   "promos": {
     "Stalker": {
@@ -73,7 +74,14 @@
       "img": "https://src.zakaz.atbmarket.com/cache/promo_page/origin_437.png",
       "end_time": "May 06, 2026 00:00:00",
       "first_seen": "2026-04-29 00:16"
+    },
+    "kupyidrugu": {
+      "title": "Купуй другу",
+      "url": "https://www.atbmarket.com/promo/kupyidrugu",
+      "img": "https://src.zakaz.atbmarket.com/cache/promo_page/origin_481.png",
+      "end_time": "May 13, 2026 00:00:00",
+      "first_seen": "2026-04-29 11:01"
     }
   },
-  "last_check": "2026-04-29 10:01"
+  "last_check": "2026-04-29 11:01"
 }
