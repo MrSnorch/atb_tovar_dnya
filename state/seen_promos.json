@@ -1,14 +1,14 @@
 {
   "seen_slugs": [
-    "puvnaekonomia",
-    "micni",
-    "Stalker",
-    "VlasniTorhoviMarky",
-    "sim_dniv",
-    "economy",
-    "vinasvitu",
+    "Pashalna_Coca-Cola",
     "sale_tovari",
-    "Pashalna_Coca-Cola"
+    "sim_dniv",
+    "micni",
+    "VlasniTorhoviMarky",
+    "vinasvitu",
+    "Stalker",
+    "economy",
+    "puvnaekonomia"
   ],
   "promos": {
     "Stalker": {
@@ -75,5 +75,5 @@
       "first_seen": "2026-04-29 00:16"
     }
   },
-  "last_check": "2026-04-29 08:01"
+  "last_check": "2026-04-29 09:01"
 }
