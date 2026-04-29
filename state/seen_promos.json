@@ -5,31 +5,18 @@
     "economy",
     "micni",
     "puvnaekonomia",
-    "sim_dniv",
-    "Pashalna_Coca-Cola",
     "sale_tovari",
     "Stalker",
     "vinasvitu",
     "znuzhki_jacobs",
-    "Jacobs"
+    "Jacobs",
+    "sim_dniv"
   ],
   "promos": {
     "Stalker": {
       "title": "S.T.A.L.K.E.R.2.   в АТБ!",
       "url": "https://www.atbmarket.com/promo/Stalker",
       "end_time": "Jun 09, 2026 00:00:00",
-      "first_seen": "2026-04-26 17:24"
-    },
-    "sim_dniv": {
-      "title": "Акція \"7 днів\"",
-      "url": "https://www.atbmarket.com/promo/sim_dniv",
-      "end_time": "Apr 30, 2026 00:00:00",
-      "first_seen": "2026-04-26 17:24"
-    },
-    "Pashalna_Coca-Cola": {
-      "title": "Пасхальна Coca-Cola",
-      "url": "https://www.atbmarket.com/promo/Pashalna_Coca-Cola",
-      "end_time": "Apr 30, 2026 00:00:00",
       "first_seen": "2026-04-26 17:24"
     },
     "puvnaekonomia": {
@@ -85,7 +72,13 @@
       "url": "https://www.atbmarket.com/promo/Jacobs",
       "end_time": "May 13, 2026 00:00:00",
       "first_seen": "2026-04-29 17:01"
+    },
+    "sim_dniv": {
+      "title": "Акція \"7 днів\"",
+      "url": "https://www.atbmarket.com/promo/sim_dniv",
+      "end_time": "May 06, 2026 00:00:00",
+      "first_seen": "2026-04-30 00:01"
     }
   },
-  "last_check": "2026-04-29 23:01"
+  "last_check": "2026-04-30 00:01"
 }
