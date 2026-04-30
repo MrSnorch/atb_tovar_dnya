@@ -10,7 +10,8 @@
     "vinasvitu",
     "znuzhki_jacobs",
     "Jacobs",
-    "sim_dniv"
+    "sim_dniv",
+    "Coca-Cola"
   ],
   "promos": {
     "Stalker": {
@@ -78,7 +79,13 @@
       "url": "https://www.atbmarket.com/promo/sim_dniv",
       "end_time": "May 06, 2026 00:00:00",
       "first_seen": "2026-04-30 00:01"
+    },
+    "Coca-Cola": {
+      "title": "Coca-Cola",
+      "url": "https://www.atbmarket.com/promo/Coca-Cola",
+      "end_time": "Jun 01, 2026 00:00:00",
+      "first_seen": "2026-04-30 23:01"
     }
   },
-  "last_check": "2026-04-30 22:01"
+  "last_check": "2026-04-30 23:01"
 }
