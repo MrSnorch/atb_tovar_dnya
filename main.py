@@ -398,9 +398,13 @@ def парсити_акції(html: str) -> list[dict]:
         тег_таймера = елемент.select_one(".actionsTimer")
         end_time    = тег_таймера.get("data-time", "") if тег_таймера else ""
 
+        тег_фото = елемент.select_one(".actions-list__img img")
+        фото = тег_фото.get("src", "") if тег_фото else ""
+
         результат.append({
             "slug": slug, "title": title,
             "url": BASE_URL + href, "end_time": end_time,
+            "фото": фото,
         })
     return результат
 
@@ -508,7 +512,11 @@ def запустити_акції(токен: str, chat_id: str, стан_тов
                 if кінець:
                     рядки.append(f"📅 Діє до: <b>{кінець}</b>")
                 рядки.append(f"🔗 <a href=\"{а['url']}\">Переглянути акцію</a>")
-                tg_text(токен, chat_id, "\n".join(рядки))
+                текст = "\n".join(рядки)
+                if а.get("фото"):
+                    tg_photo(токен, chat_id, а["фото"], текст)
+                else:
+                    tg_text(токен, chat_id, текст)
         збережені[а["slug"]] = {
             "title":      а["title"],
             "url":        а["url"],
