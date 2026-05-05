@@ -1,17 +1,16 @@
 {
   "seen_slugs": [
-    "VlasniTorhoviMarky",
     "kupyidrugu",
-    "economy",
-    "micni",
-    "puvnaekonomia",
     "sale_tovari",
     "Stalker",
     "vinasvitu",
     "znuzhki_jacobs",
     "Jacobs",
-    "sim_dniv",
-    "Coca-Cola"
+    "Coca-Cola",
+    "economy",
+    "puvnaekonomia",
+    "micni",
+    "VlasniTorhoviMarky"
   ],
   "promos": {
     "Stalker": {
@@ -20,40 +19,16 @@
       "end_time": "Jun 09, 2026 00:00:00",
       "first_seen": "2026-04-26 17:24"
     },
-    "puvnaekonomia": {
-      "title": "Пивна економія",
-      "url": "https://www.atbmarket.com/promo/puvnaekonomia",
-      "end_time": "May 06, 2026 00:00:00",
-      "first_seen": "2026-04-29 00:01"
-    },
     "vinasvitu": {
       "title": "Вина Світу",
       "url": "https://www.atbmarket.com/promo/vinasvitu",
       "end_time": "May 13, 2026 00:00:00",
       "first_seen": "2026-04-29 00:01"
     },
-    "economy": {
-      "title": "Акція \"Економія\"",
-      "url": "https://www.atbmarket.com/promo/economy",
-      "end_time": "May 06, 2026 00:00:00",
-      "first_seen": "2026-04-29 00:16"
-    },
     "sale_tovari": {
       "title": "Суперціна",
       "url": "https://www.atbmarket.com/promo/sale_tovari",
       "end_time": "May 13, 2026 00:00:00",
-      "first_seen": "2026-04-29 00:16"
-    },
-    "micni": {
-      "title": "Ексклюзивна знижка з Карткою АТБ!",
-      "url": "https://www.atbmarket.com/promo/micni",
-      "end_time": "May 06, 2026 00:00:00",
-      "first_seen": "2026-04-29 00:16"
-    },
-    "VlasniTorhoviMarky": {
-      "title": "Власні торгові марки АТБ",
-      "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
-      "end_time": "May 06, 2026 00:00:00",
       "first_seen": "2026-04-29 00:16"
     },
     "kupyidrugu": {
@@ -74,18 +49,36 @@
       "end_time": "May 13, 2026 00:00:00",
       "first_seen": "2026-04-29 17:01"
     },
-    "sim_dniv": {
-      "title": "Акція \"7 днів\"",
-      "url": "https://www.atbmarket.com/promo/sim_dniv",
-      "end_time": "May 06, 2026 00:00:00",
-      "first_seen": "2026-04-30 00:01"
-    },
     "Coca-Cola": {
       "title": "Coca-Cola",
       "url": "https://www.atbmarket.com/promo/Coca-Cola",
       "end_time": "Jun 01, 2026 00:00:00",
       "first_seen": "2026-04-30 23:01"
+    },
+    "economy": {
+      "title": "Акція \"Економія\"",
+      "url": "https://www.atbmarket.com/promo/economy",
+      "end_time": "May 13, 2026 00:00:00",
+      "first_seen": "2026-05-06 00:01"
+    },
+    "puvnaekonomia": {
+      "title": "Пивна економія",
+      "url": "https://www.atbmarket.com/promo/puvnaekonomia",
+      "end_time": "May 13, 2026 00:00:00",
+      "first_seen": "2026-05-06 00:01"
+    },
+    "micni": {
+      "title": "Ексклюзивна знижка з Карткою АТБ!",
+      "url": "https://www.atbmarket.com/promo/micni",
+      "end_time": "May 13, 2026 00:00:00",
+      "first_seen": "2026-05-06 00:01"
+    },
+    "VlasniTorhoviMarky": {
+      "title": "Власні торгові марки АТБ",
+      "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
+      "end_time": "May 13, 2026 00:00:00",
+      "first_seen": "2026-05-06 00:01"
     }
   },
-  "last_check": "2026-05-05 23:01"
+  "last_check": "2026-05-06 00:01"
 }
