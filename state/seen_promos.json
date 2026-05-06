@@ -12,7 +12,8 @@
     "micni",
     "VlasniTorhoviMarky",
     "MONSTER_energy",
-    "kupuividtreh"
+    "kupuividtreh",
+    "sim_dniv"
   ],
   "promos": {
     "Stalker": {
@@ -92,7 +93,13 @@
       "url": "https://www.atbmarket.com/promo/kupuividtreh",
       "end_time": "May 13, 2026 00:00:00",
       "first_seen": "2026-05-06 17:01"
+    },
+    "sim_dniv": {
+      "title": "Акція \"7 днів\"",
+      "url": "https://www.atbmarket.com/promo/sim_dniv",
+      "end_time": "May 14, 2026 00:00:00",
+      "first_seen": "2026-05-07 00:01"
     }
   },
-  "last_check": "2026-05-06 23:01"
+  "last_check": "2026-05-07 00:01"
 }
