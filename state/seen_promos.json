@@ -11,7 +11,8 @@
     "puvnaekonomia",
     "micni",
     "VlasniTorhoviMarky",
-    "MONSTER_energy"
+    "MONSTER_energy",
+    "kupuividtreh"
   ],
   "promos": {
     "Stalker": {
@@ -85,7 +86,13 @@
       "url": "https://www.atbmarket.com/promo/MONSTER_energy",
       "end_time": "Jun 01, 2026 00:00:00",
       "first_seen": "2026-05-06 11:01"
+    },
+    "kupuividtreh": {
+      "title": "Купуй від 3-х",
+      "url": "https://www.atbmarket.com/promo/kupuividtreh",
+      "end_time": "May 13, 2026 00:00:00",
+      "first_seen": "2026-05-06 17:01"
     }
   },
-  "last_check": "2026-05-06 16:01"
+  "last_check": "2026-05-06 17:01"
 }
