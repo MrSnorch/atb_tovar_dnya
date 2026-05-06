@@ -10,7 +10,8 @@
     "economy",
     "puvnaekonomia",
     "micni",
-    "VlasniTorhoviMarky"
+    "VlasniTorhoviMarky",
+    "MONSTER_energy"
   ],
   "promos": {
     "Stalker": {
@@ -78,7 +79,13 @@
       "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
       "end_time": "May 13, 2026 00:00:00",
       "first_seen": "2026-05-06 00:01"
+    },
+    "MONSTER_energy": {
+      "title": "MONSTER",
+      "url": "https://www.atbmarket.com/promo/MONSTER_energy",
+      "end_time": "Jun 01, 2026 00:00:00",
+      "first_seen": "2026-05-06 11:01"
     }
   },
-  "last_check": "2026-05-06 10:01"
+  "last_check": "2026-05-06 11:01"
 }
