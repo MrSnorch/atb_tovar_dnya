@@ -14,7 +14,8 @@
     "MONSTER_energy",
     "kupuividtreh",
     "sim_dniv",
-    "deliveryzxc"
+    "deliveryzxc",
+    "Hroniky_suly_2_v_ATB"
   ],
   "promos": {
     "Stalker": {
@@ -106,7 +107,13 @@
       "url": "https://www.atbmarket.com/promo/deliveryzxc",
       "end_time": "Sep 02, 2026 00:00:00",
       "first_seen": "2026-05-07 15:01"
+    },
+    "Hroniky_suly_2_v_ATB": {
+      "title": "Хроніки Сили 2 в АТБ!",
+      "url": "https://www.atbmarket.com/promo/Hroniky_suly_2_v_ATB",
+      "end_time": "Sep 02, 2026 00:00:00",
+      "first_seen": "2026-05-07 18:01"
     }
   },
-  "last_check": "2026-05-07 17:01"
+  "last_check": "2026-05-07 18:01"
 }
