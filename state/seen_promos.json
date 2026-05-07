@@ -13,7 +13,8 @@
     "VlasniTorhoviMarky",
     "MONSTER_energy",
     "kupuividtreh",
-    "sim_dniv"
+    "sim_dniv",
+    "deliveryzxc"
   ],
   "promos": {
     "Stalker": {
@@ -99,7 +100,13 @@
       "url": "https://www.atbmarket.com/promo/sim_dniv",
       "end_time": "May 14, 2026 00:00:00",
       "first_seen": "2026-05-07 00:01"
+    },
+    "deliveryzxc": {
+      "title": "Безкоштовна доставка з ХС",
+      "url": "https://www.atbmarket.com/promo/deliveryzxc",
+      "end_time": "Sep 02, 2026 00:00:00",
+      "first_seen": "2026-05-07 15:01"
     }
   },
-  "last_check": "2026-05-07 14:01"
+  "last_check": "2026-05-07 15:01"
 }
