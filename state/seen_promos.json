@@ -1,21 +1,16 @@
 {
   "seen_slugs": [
-    "kupyidrugu",
-    "sale_tovari",
     "Stalker",
-    "vinasvitu",
-    "znuzhki_jacobs",
-    "Jacobs",
     "Coca-Cola",
-    "economy",
-    "puvnaekonomia",
-    "micni",
-    "VlasniTorhoviMarky",
     "MONSTER_energy",
-    "kupuividtreh",
     "sim_dniv",
     "deliveryzxc",
-    "Hroniky_suly_2_v_ATB"
+    "Hroniky_suly_2_v_ATB",
+    "economy",
+    "kupuividtreh",
+    "sale_tovari",
+    "micni",
+    "VlasniTorhoviMarky"
   ],
   "promos": {
     "Stalker": {
@@ -24,77 +19,17 @@
       "end_time": "Jun 09, 2026 00:00:00",
       "first_seen": "2026-04-26 17:24"
     },
-    "vinasvitu": {
-      "title": "Вина Світу",
-      "url": "https://www.atbmarket.com/promo/vinasvitu",
-      "end_time": "May 13, 2026 00:00:00",
-      "first_seen": "2026-04-29 00:01"
-    },
-    "sale_tovari": {
-      "title": "Суперціна",
-      "url": "https://www.atbmarket.com/promo/sale_tovari",
-      "end_time": "May 13, 2026 00:00:00",
-      "first_seen": "2026-04-29 00:16"
-    },
-    "kupyidrugu": {
-      "title": "Купуй другу",
-      "url": "https://www.atbmarket.com/promo/kupyidrugu",
-      "end_time": "May 13, 2026 00:00:00",
-      "first_seen": "2026-04-29 11:01"
-    },
-    "znuzhki_jacobs": {
-      "title": "Ексклюзивні кавові знижки від Jacobs!",
-      "url": "https://www.atbmarket.com/promo/znuzhki_jacobs",
-      "end_time": "May 13, 2026 00:00:00",
-      "first_seen": "2026-04-29 16:01"
-    },
-    "Jacobs": {
-      "title": "Jacobs Кавові знижки",
-      "url": "https://www.atbmarket.com/promo/Jacobs",
-      "end_time": "May 13, 2026 00:00:00",
-      "first_seen": "2026-04-29 17:01"
-    },
     "Coca-Cola": {
       "title": "Coca-Cola",
       "url": "https://www.atbmarket.com/promo/Coca-Cola",
       "end_time": "Jun 01, 2026 00:00:00",
       "first_seen": "2026-04-30 23:01"
     },
-    "economy": {
-      "title": "Акція \"Економія\"",
-      "url": "https://www.atbmarket.com/promo/economy",
-      "end_time": "May 13, 2026 00:00:00",
-      "first_seen": "2026-05-06 00:01"
-    },
-    "puvnaekonomia": {
-      "title": "Пивна економія",
-      "url": "https://www.atbmarket.com/promo/puvnaekonomia",
-      "end_time": "May 13, 2026 00:00:00",
-      "first_seen": "2026-05-06 00:01"
-    },
-    "micni": {
-      "title": "Ексклюзивна знижка з Карткою АТБ!",
-      "url": "https://www.atbmarket.com/promo/micni",
-      "end_time": "May 13, 2026 00:00:00",
-      "first_seen": "2026-05-06 00:01"
-    },
-    "VlasniTorhoviMarky": {
-      "title": "Власні торгові марки АТБ",
-      "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
-      "end_time": "May 13, 2026 00:00:00",
-      "first_seen": "2026-05-06 00:01"
-    },
     "MONSTER_energy": {
       "title": "MONSTER",
       "url": "https://www.atbmarket.com/promo/MONSTER_energy",
       "end_time": "Jun 01, 2026 00:00:00",
       "first_seen": "2026-05-06 11:01"
-    },
-    "kupuividtreh": {
-      "title": "Купуй від 3-х",
-      "url": "https://www.atbmarket.com/promo/kupuividtreh",
-      "end_time": "May 13, 2026 00:00:00",
-      "first_seen": "2026-05-06 17:01"
     },
     "sim_dniv": {
       "title": "Акція \"7 днів\"",
@@ -113,7 +48,37 @@
       "url": "https://www.atbmarket.com/promo/Hroniky_suly_2_v_ATB",
       "end_time": "Sep 02, 2026 00:00:00",
       "first_seen": "2026-05-07 18:01"
+    },
+    "economy": {
+      "title": "Акція \"Економія\"",
+      "url": "https://www.atbmarket.com/promo/economy",
+      "end_time": "May 20, 2026 00:00:00",
+      "first_seen": "2026-05-13 00:01"
+    },
+    "kupuividtreh": {
+      "title": "Купуй від 3-х",
+      "url": "https://www.atbmarket.com/promo/kupuividtreh",
+      "end_time": "May 20, 2026 00:00:00",
+      "first_seen": "2026-05-13 00:01"
+    },
+    "sale_tovari": {
+      "title": "Суперціна",
+      "url": "https://www.atbmarket.com/promo/sale_tovari",
+      "end_time": "May 20, 2026 00:00:00",
+      "first_seen": "2026-05-13 00:01"
+    },
+    "micni": {
+      "title": "Ексклюзивна знижка з Карткою АТБ!",
+      "url": "https://www.atbmarket.com/promo/micni",
+      "end_time": "May 20, 2026 00:00:00",
+      "first_seen": "2026-05-13 00:01"
+    },
+    "VlasniTorhoviMarky": {
+      "title": "Власні торгові марки АТБ",
+      "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
+      "end_time": "May 20, 2026 00:00:00",
+      "first_seen": "2026-05-13 00:01"
     }
   },
-  "last_check": "2026-05-12 23:01"
+  "last_check": "2026-05-13 00:01"
 }
