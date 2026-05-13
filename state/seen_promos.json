@@ -3,7 +3,6 @@
     "Stalker",
     "Coca-Cola",
     "MONSTER_energy",
-    "sim_dniv",
     "deliveryzxc",
     "Hroniky_suly_2_v_ATB",
     "economy",
@@ -11,7 +10,8 @@
     "sale_tovari",
     "micni",
     "VlasniTorhoviMarky",
-    "Jacobs"
+    "Jacobs",
+    "sim_dniv"
   ],
   "promos": {
     "Stalker": {
@@ -31,12 +31,6 @@
       "url": "https://www.atbmarket.com/promo/MONSTER_energy",
       "end_time": "Jun 01, 2026 00:00:00",
       "first_seen": "2026-05-06 11:01"
-    },
-    "sim_dniv": {
-      "title": "Акція \"7 днів\"",
-      "url": "https://www.atbmarket.com/promo/sim_dniv",
-      "end_time": "May 14, 2026 00:00:00",
-      "first_seen": "2026-05-07 00:01"
     },
     "deliveryzxc": {
       "title": "Безкоштовна доставка з ХС",
@@ -85,7 +79,13 @@
       "url": "https://www.atbmarket.com/promo/Jacobs",
       "end_time": "May 20, 2026 00:00:00",
       "first_seen": "2026-05-13 12:01"
+    },
+    "sim_dniv": {
+      "title": "Акція \"7 днів\"",
+      "url": "https://www.atbmarket.com/promo/sim_dniv",
+      "end_time": "May 21, 2026 00:00:00",
+      "first_seen": "2026-05-14 00:01"
     }
   },
-  "last_check": "2026-05-13 23:01"
+  "last_check": "2026-05-14 00:01"
 }
