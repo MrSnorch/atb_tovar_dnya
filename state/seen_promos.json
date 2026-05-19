@@ -11,7 +11,8 @@
     "micni",
     "VlasniTorhoviMarky",
     "Jacobs",
-    "sim_dniv"
+    "sim_dniv",
+    "loyalty"
   ],
   "promos": {
     "Stalker": {
@@ -59,7 +60,7 @@
     "sale_tovari": {
       "title": "Суперціна",
       "url": "https://www.atbmarket.com/promo/sale_tovari",
-      "end_time": "May 20, 2026 00:00:00",
+      "end_time": "May 27, 2026 00:00:00",
       "first_seen": "2026-05-13 00:01"
     },
     "micni": {
@@ -85,7 +86,13 @@
       "url": "https://www.atbmarket.com/promo/sim_dniv",
       "end_time": "May 21, 2026 00:00:00",
       "first_seen": "2026-05-14 00:01"
+    },
+    "loyalty": {
+      "title": "Лояльность",
+      "url": "https://www.atbmarket.com/promo/loyalty",
+      "end_time": "May 20, 2029 00:00:00",
+      "first_seen": "2026-05-19 18:01"
     }
   },
-  "last_check": "2026-05-19 17:01"
+  "last_check": "2026-05-19 18:01"
 }
