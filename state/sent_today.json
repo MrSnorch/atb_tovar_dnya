@@ -1,8 +1,20 @@
 {
-  "date": "2026-05-19",
-  "sent_ids": [],
-  "products": {},
-  "total_found": 0,
-  "scans": 24,
+  "date": "2026-05-20",
+  "sent_ids": [
+    "product/napij-2-l-zivcik-gazovanij"
+  ],
+  "products": {
+    "product/napij-2-l-zivcik-gazovanij": {
+      "назва": "Напій 2 л Живчик газований",
+      "знижка": "-40%",
+      "нова_ціна": "37.90 грн",
+      "стара_ціна": "63.90 грн",
+      "посилання": "https://www.atbmarket.com/product/napij-2-l-zivcik-gazovanij",
+      "фото": "https://src.zakaz.atbmarket.com/prodwebp/catalog_list/i15/catalog_list_69449.webp",
+      "надіслано_о": "00:01"
+    }
+  },
+  "total_found": 2,
+  "scans": 1,
   "promos_message_id": 61
 }
