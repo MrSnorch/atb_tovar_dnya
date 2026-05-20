@@ -6,11 +6,11 @@
     "deliveryzxc",
     "Hroniky_suly_2_v_ATB",
     "sale_tovari",
-    "sim_dniv",
     "loyalty",
     "economy",
     "micni",
-    "VlasniTorhoviMarky"
+    "VlasniTorhoviMarky",
+    "sim_dniv"
   ],
   "promos": {
     "Stalker": {
@@ -49,12 +49,6 @@
       "end_time": "May 27, 2026 00:00:00",
       "first_seen": "2026-05-13 00:01"
     },
-    "sim_dniv": {
-      "title": "Акція \"7 днів\"",
-      "url": "https://www.atbmarket.com/promo/sim_dniv",
-      "end_time": "May 21, 2026 00:00:00",
-      "first_seen": "2026-05-14 00:01"
-    },
     "loyalty": {
       "title": "Лояльність",
       "url": "https://www.atbmarket.com/promo/loyalty",
@@ -78,7 +72,13 @@
       "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
       "end_time": "May 27, 2026 00:00:00",
       "first_seen": "2026-05-20 00:01"
+    },
+    "sim_dniv": {
+      "title": "Акція \"7 днів\"",
+      "url": "https://www.atbmarket.com/promo/sim_dniv",
+      "end_time": "May 28, 2026 00:00:00",
+      "first_seen": "2026-05-21 00:01"
     }
   },
-  "last_check": "2026-05-20 23:01"
+  "last_check": "2026-05-21 00:01"
 }
