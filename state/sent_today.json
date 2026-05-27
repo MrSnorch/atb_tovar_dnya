@@ -1,21 +1,11 @@
 {
-  "date": "2026-05-27",
-  "sent_ids": [
+  "date": "2026-05-28",
+  "sent_ids": [],
+  "prev_day_ids": [
     "product/loksina-65-g-glads-risova-z-sousom-fo-bo-mup"
   ],
-  "prev_day_ids": [],
-  "products": {
-    "product/loksina-65-g-glads-risova-z-sousom-fo-bo-mup": {
-      "назва": "Локшина 65 г Glads рисова з соусом ФО БО м/уп",
-      "знижка": "-17%",
-      "нова_ціна": "43.70 грн",
-      "стара_ціна": "52.90 грн",
-      "посилання": "https://www.atbmarket.com/product/loksina-65-g-glads-risova-z-sousom-fo-bo-mup",
-      "фото": "https://src.zakaz.atbmarket.com/prodwebp/catalog_list/i34/catalog_list_68881.webp",
-      "надіслано_о": "00:01"
-    }
-  },
-  "total_found": 2,
-  "scans": 24,
+  "products": {},
+  "total_found": 0,
+  "scans": 1,
   "promos_message_id": 61
 }
