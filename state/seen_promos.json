@@ -11,7 +11,8 @@
     "sale_tovari",
     "loyalty",
     "micni",
-    "VlasniTorhoviMarky"
+    "VlasniTorhoviMarky",
+    "Jacobs"
   ],
   "promos": {
     "Stalker": {
@@ -85,7 +86,13 @@
       "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
       "end_time": "Jun 03, 2026 00:00:00",
       "first_seen": "2026-05-27 00:01"
+    },
+    "Jacobs": {
+      "title": "Carte Noire",
+      "url": "https://www.atbmarket.com/promo/Jacobs",
+      "end_time": "Jun 03, 2026 00:00:00",
+      "first_seen": "2026-05-27 16:01"
     }
   },
-  "last_check": "2026-05-27 15:02"
+  "last_check": "2026-05-27 16:01"
 }
