@@ -12,7 +12,8 @@
     "micni",
     "VlasniTorhoviMarky",
     "Jacobs",
-    "sim_dniv"
+    "sim_dniv",
+    "puvnivihidny"
   ],
   "promos": {
     "Stalker": {
@@ -92,7 +93,13 @@
       "url": "https://www.atbmarket.com/promo/sim_dniv",
       "end_time": "Jun 04, 2026 00:00:00",
       "first_seen": "2026-05-28 00:01"
+    },
+    "puvnivihidny": {
+      "title": "Пивні вихідні",
+      "url": "https://www.atbmarket.com/promo/puvnivihidny",
+      "end_time": "Jun 01, 2026 00:00:00",
+      "first_seen": "2026-05-29 00:01"
     }
   },
-  "last_check": "2026-05-28 23:01"
+  "last_check": "2026-05-29 00:01"
 }
