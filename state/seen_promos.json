@@ -1,8 +1,6 @@
 {
   "seen_slugs": [
     "Stalker",
-    "Coca-Cola",
-    "MONSTER_energy",
     "deliveryzxc",
     "Hroniky_suly_2_v_ATB",
     "economy",
@@ -12,8 +10,7 @@
     "micni",
     "VlasniTorhoviMarky",
     "Jacobs",
-    "sim_dniv",
-    "puvnivihidny"
+    "sim_dniv"
   ],
   "promos": {
     "Stalker": {
@@ -21,18 +18,6 @@
       "url": "https://www.atbmarket.com/promo/Stalker",
       "end_time": "Jun 09, 2026 00:00:00",
       "first_seen": "2026-04-26 17:24"
-    },
-    "Coca-Cola": {
-      "title": "Coca-Cola",
-      "url": "https://www.atbmarket.com/promo/Coca-Cola",
-      "end_time": "Jun 01, 2026 00:00:00",
-      "first_seen": "2026-04-30 23:01"
-    },
-    "MONSTER_energy": {
-      "title": "MONSTER",
-      "url": "https://www.atbmarket.com/promo/MONSTER_energy",
-      "end_time": "Jun 01, 2026 00:00:00",
-      "first_seen": "2026-05-06 11:01"
     },
     "deliveryzxc": {
       "title": "Безкоштовна доставка з ХС",
@@ -93,13 +78,7 @@
       "url": "https://www.atbmarket.com/promo/sim_dniv",
       "end_time": "Jun 04, 2026 00:00:00",
       "first_seen": "2026-05-28 00:01"
-    },
-    "puvnivihidny": {
-      "title": "Пивні вихідні",
-      "url": "https://www.atbmarket.com/promo/puvnivihidny",
-      "end_time": "Jun 01, 2026 00:00:00",
-      "first_seen": "2026-05-29 00:01"
     }
   },
-  "last_check": "2026-05-31 23:01"
+  "last_check": "2026-06-01 00:01"
 }
