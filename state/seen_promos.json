@@ -12,7 +12,9 @@
     "Jacobs",
     "sim_dniv",
     "bezkoshtovna_dostavka",
-    "MONSTER_energy"
+    "MONSTER_energy",
+    "chernihivske",
+    "Hroniky__suly_2_v_ATB"
   ],
   "promos": {
     "Stalker": {
@@ -92,7 +94,19 @@
       "url": "https://www.atbmarket.com/promo/MONSTER_energy",
       "end_time": "Jul 01, 2026 00:00:00",
       "first_seen": "2026-06-01 15:01"
+    },
+    "chernihivske": {
+      "title": "Вболівай з Чернігівським",
+      "url": "https://www.atbmarket.com/promo/chernihivske",
+      "end_time": "Jul 01, 2026 00:00:00",
+      "first_seen": "2026-06-01 18:01"
+    },
+    "Hroniky__suly_2_v_ATB": {
+      "title": "Хроніки Сили 2 в АТБ!",
+      "url": "https://www.atbmarket.com/promo/Hroniky__suly_2_v_ATB",
+      "end_time": "Jul 01, 2026 00:00:00",
+      "first_seen": "2026-06-01 18:01"
     }
   },
-  "last_check": "2026-06-01 17:01"
+  "last_check": "2026-06-01 18:01"
 }
