@@ -3,18 +3,18 @@
     "Stalker",
     "deliveryzxc",
     "Hroniky_suly_2_v_ATB",
-    "economy",
     "Dnivyna",
     "sale_tovari",
     "loyalty",
-    "micni",
-    "VlasniTorhoviMarky",
-    "Jacobs",
     "sim_dniv",
     "bezkoshtovna_dostavka",
     "MONSTER_energy",
     "chernihivske",
-    "Hroniky__suly_2_v_ATB"
+    "Hroniky__suly_2_v_ATB",
+    "economy",
+    "micni",
+    "VlasniTorhoviMarky",
+    "Livoltek"
   ],
   "promos": {
     "Stalker": {
@@ -35,12 +35,6 @@
       "end_time": "Sep 02, 2026 00:00:00",
       "first_seen": "2026-05-07 18:01"
     },
-    "economy": {
-      "title": "Акція \"Економія\"",
-      "url": "https://www.atbmarket.com/promo/economy",
-      "end_time": "Jun 03, 2026 00:00:00",
-      "first_seen": "2026-05-27 00:01"
-    },
     "Dnivyna": {
       "title": "Дні вина Італії та Іспанії",
       "url": "https://www.atbmarket.com/promo/Dnivyna",
@@ -58,24 +52,6 @@
       "url": "https://www.atbmarket.com/promo/loyalty",
       "end_time": "Jun 10, 2026 00:00:00",
       "first_seen": "2026-05-27 00:01"
-    },
-    "micni": {
-      "title": "Ексклюзивна знижка з Карткою АТБ!",
-      "url": "https://www.atbmarket.com/promo/micni",
-      "end_time": "Jun 03, 2026 00:00:00",
-      "first_seen": "2026-05-27 00:01"
-    },
-    "VlasniTorhoviMarky": {
-      "title": "Власні торгові марки АТБ",
-      "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
-      "end_time": "Jun 03, 2026 00:00:00",
-      "first_seen": "2026-05-27 00:01"
-    },
-    "Jacobs": {
-      "title": "Carte Noire",
-      "url": "https://www.atbmarket.com/promo/Jacobs",
-      "end_time": "Jun 03, 2026 00:00:00",
-      "first_seen": "2026-05-27 16:01"
     },
     "sim_dniv": {
       "title": "Акція \"7 днів\"",
@@ -106,7 +82,31 @@
       "url": "https://www.atbmarket.com/promo/Hroniky__suly_2_v_ATB",
       "end_time": "Jun 28, 2026 00:00:00",
       "first_seen": "2026-06-01 18:01"
+    },
+    "economy": {
+      "title": "Акція \"Економія\"",
+      "url": "https://www.atbmarket.com/promo/economy",
+      "end_time": "Jun 10, 2026 00:00:00",
+      "first_seen": "2026-06-03 00:01"
+    },
+    "micni": {
+      "title": "Ексклюзивна знижка з Карткою АТБ!",
+      "url": "https://www.atbmarket.com/promo/micni",
+      "end_time": "Jun 10, 2026 00:00:00",
+      "first_seen": "2026-06-03 00:01"
+    },
+    "VlasniTorhoviMarky": {
+      "title": "Власні торгові марки АТБ",
+      "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
+      "end_time": "Jun 10, 2026 00:00:00",
+      "first_seen": "2026-06-03 00:01"
+    },
+    "Livoltek": {
+      "title": "Livoltek",
+      "url": "https://www.atbmarket.com/promo/Livoltek",
+      "end_time": "Jun 09, 2026 00:00:00",
+      "first_seen": "2026-06-03 00:01"
     }
   },
-  "last_check": "2026-06-02 23:01"
+  "last_check": "2026-06-03 00:01"
 }
