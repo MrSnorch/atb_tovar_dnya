@@ -6,7 +6,6 @@
     "Dnivyna",
     "sale_tovari",
     "loyalty",
-    "sim_dniv",
     "bezkoshtovna_dostavka",
     "MONSTER_energy",
     "chernihivske",
@@ -14,7 +13,8 @@
     "economy",
     "micni",
     "VlasniTorhoviMarky",
-    "Livoltek"
+    "Livoltek",
+    "sim_dniv"
   ],
   "promos": {
     "Stalker": {
@@ -52,12 +52,6 @@
       "url": "https://www.atbmarket.com/promo/loyalty",
       "end_time": "Jun 10, 2026 00:00:00",
       "first_seen": "2026-05-27 00:01"
-    },
-    "sim_dniv": {
-      "title": "Акція \"7 днів\"",
-      "url": "https://www.atbmarket.com/promo/sim_dniv",
-      "end_time": "Jun 04, 2026 00:00:00",
-      "first_seen": "2026-05-28 00:01"
     },
     "bezkoshtovna_dostavka": {
       "title": "Безкоштовна доставка",
@@ -106,7 +100,13 @@
       "url": "https://www.atbmarket.com/promo/Livoltek",
       "end_time": "Jun 09, 2026 00:00:00",
       "first_seen": "2026-06-03 00:01"
+    },
+    "sim_dniv": {
+      "title": "Акція \"7 днів\"",
+      "url": "https://www.atbmarket.com/promo/sim_dniv",
+      "end_time": "Jun 11, 2026 00:00:00",
+      "first_seen": "2026-06-04 00:01"
     }
   },
-  "last_check": "2026-06-03 23:25"
+  "last_check": "2026-06-04 00:01"
 }
