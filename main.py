@@ -100,6 +100,9 @@ def завантажити_сторінку(url: str) -> str:
         if куки:
             scraper.cookies.update(куки)
         resp = scraper.get(url, headers=HEADERS, timeout=30)
+        if resp.status_code == 404:
+            log.warning("cloudscraper: 404 — сторінка не знайдена.")
+            return None
         resp.raise_for_status()
         log.info("OK (HTTP %d)", resp.status_code)
         return resp.text
@@ -108,10 +111,16 @@ def завантажити_сторінку(url: str) -> str:
 
     if куки:
         log.info("requests+cookies → %s", url)
-        resp = requests.get(url, headers=HEADERS, cookies=куки, timeout=30)
-        resp.raise_for_status()
-        log.info("OK (HTTP %d)", resp.status_code)
-        return resp.text
+        try:
+            resp = requests.get(url, headers=HEADERS, cookies=куки, timeout=30)
+            resp.raise_for_status()
+            log.info("OK (HTTP %d)", resp.status_code)
+            return resp.text
+        except requests.exceptions.HTTPError as e:
+            if e.response is not None and e.response.status_code == 404:
+                log.warning("requests+cookies: 404 — сторінка не знайдена.")
+                return None
+            raise
 
     raise RuntimeError(
         "Не вдалося завантажити сторінку. "
@@ -330,6 +339,10 @@ def запустити_товар_дня(токен: str, chat_id: str, стан
     номер_скану   = стан.get("scans", 0) + 1
 
     html = завантажити_сторінку(URL_TOVAR_DNYA)
+    if html is None:
+        log.info("Товар дня: сторінка недоступна (404) — пропускаємо.")
+        стан["scans"] = номер_скану
+        return
     всі  = парсити_товари_дня(html)
     log.info("Знайдено товарів: %d", len(всі))
 
