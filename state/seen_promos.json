@@ -6,14 +6,14 @@
     "MONSTER_energy",
     "chernihivske",
     "Hroniky__suly_2_v_ATB",
-    "sim_dniv",
     "economy",
     "puvnidni",
     "sezonpyvnuhznyzhok",
     "sale_tovari",
     "loyalty",
     "micni",
-    "VlasniTorhoviMarky"
+    "VlasniTorhoviMarky",
+    "sim_dniv"
   ],
   "promos": {
     "deliveryzxc": {
@@ -51,12 +51,6 @@
       "url": "https://www.atbmarket.com/promo/Hroniky__suly_2_v_ATB",
       "end_time": "Jun 28, 2026 00:00:00",
       "first_seen": "2026-06-01 18:01"
-    },
-    "sim_dniv": {
-      "title": "Акція \"7 днів\"",
-      "url": "https://www.atbmarket.com/promo/sim_dniv",
-      "end_time": "Jun 11, 2026 00:00:00",
-      "first_seen": "2026-06-04 00:01"
     },
     "economy": {
       "title": "Акція \"Економія\"",
@@ -99,7 +93,13 @@
       "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
       "end_time": "Jun 17, 2026 00:00:00",
       "first_seen": "2026-06-10 00:01"
+    },
+    "sim_dniv": {
+      "title": "Акція \"7 днів\"",
+      "url": "https://www.atbmarket.com/promo/sim_dniv",
+      "end_time": "Jun 18, 2026 00:00:00",
+      "first_seen": "2026-06-11 00:01"
     }
   },
-  "last_check": "2026-06-10 23:01"
+  "last_check": "2026-06-11 00:01"
 }
