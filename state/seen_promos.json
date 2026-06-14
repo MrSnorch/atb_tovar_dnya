@@ -13,8 +13,7 @@
     "loyalty",
     "micni",
     "VlasniTorhoviMarky",
-    "sim_dniv",
-    "zukor"
+    "sim_dniv"
   ],
   "promos": {
     "deliveryzxc": {
@@ -100,13 +99,7 @@
       "url": "https://www.atbmarket.com/promo/sim_dniv",
       "end_time": "Jun 18, 2026 00:00:00",
       "first_seen": "2026-06-11 00:01"
-    },
-    "zukor": {
-      "title": "Цукор ТМ Розумний вибір",
-      "url": "https://www.atbmarket.com/promo/zukor",
-      "end_time": "Jun 15, 2026 00:00:00",
-      "first_seen": "2026-06-12 00:01"
     }
   },
-  "last_check": "2026-06-14 23:01"
+  "last_check": "2026-06-15 00:01"
 }
