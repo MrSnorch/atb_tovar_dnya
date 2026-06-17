@@ -14,7 +14,8 @@
     "kupuydrugu",
     "micni",
     "VlasniTorhoviMarky",
-    "PivoSezon"
+    "PivoSezon",
+    "dnipiva"
   ],
   "promos": {
     "deliveryzxc": {
@@ -106,7 +107,13 @@
       "url": "https://www.atbmarket.com/promo/PivoSezon",
       "end_time": "Jun 24, 2026 00:00:00",
       "first_seen": "2026-06-17 00:01"
+    },
+    "dnipiva": {
+      "title": "Дні Пива",
+      "url": "https://www.atbmarket.com/promo/dnipiva",
+      "end_time": "Jun 24, 2026 00:00:00",
+      "first_seen": "2026-06-17 10:01"
     }
   },
-  "last_check": "2026-06-17 09:01"
+  "last_check": "2026-06-17 10:01"
 }
