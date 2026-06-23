@@ -6,16 +6,14 @@
     "MONSTER_energy",
     "chernihivske",
     "Hroniky__suly_2_v_ATB",
+    "Livoltek",
+    "kupuydrugu",
+    "sim_dniv",
+    "denkonstytutsii",
     "sale_tovari",
     "loyalty",
-    "Livoltek",
-    "denkonstytutsii",
-    "kupuydrugu",
     "micni",
-    "VlasniTorhoviMarky",
-    "PivoSezon",
-    "dnipiva",
-    "sim_dniv"
+    "VlasniTorhoviMarky"
   ],
   "promos": {
     "deliveryzxc": {
@@ -54,29 +52,11 @@
       "end_time": "Jun 28, 2026 00:00:00",
       "first_seen": "2026-06-01 18:01"
     },
-    "sale_tovari": {
-      "title": "Суперціна",
-      "url": "https://www.atbmarket.com/promo/sale_tovari",
-      "end_time": "Jun 24, 2026 00:00:00",
-      "first_seen": "2026-06-10 00:01"
-    },
-    "loyalty": {
-      "title": "Лояльність",
-      "url": "https://www.atbmarket.com/promo/loyalty",
-      "end_time": "Jun 24, 2026 00:00:00",
-      "first_seen": "2026-06-10 00:01"
-    },
     "Livoltek": {
       "title": "Livoltek",
       "url": "https://www.atbmarket.com/promo/Livoltek",
       "end_time": "Jun 30, 2026 00:00:00",
       "first_seen": "2026-06-16 09:01"
-    },
-    "denkonstytutsii": {
-      "title": "День Конституції та Державності",
-      "url": "https://www.atbmarket.com/promo/denkonstytutsii",
-      "end_time": "Jun 24, 2026 00:00:00",
-      "first_seen": "2026-06-17 00:01"
     },
     "kupuydrugu": {
       "title": "Купуй другу",
@@ -84,36 +64,42 @@
       "end_time": "Jun 30, 2026 00:00:00",
       "first_seen": "2026-06-17 00:01"
     },
-    "micni": {
-      "title": "Ексклюзивна знижка з Карткою АТБ!",
-      "url": "https://www.atbmarket.com/promo/micni",
-      "end_time": "Jun 24, 2026 00:00:00",
-      "first_seen": "2026-06-17 00:01"
-    },
-    "VlasniTorhoviMarky": {
-      "title": "Власні торгові марки АТБ",
-      "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
-      "end_time": "Jun 24, 2026 00:00:00",
-      "first_seen": "2026-06-17 00:01"
-    },
-    "PivoSezon": {
-      "title": "Сезон пивних знижок",
-      "url": "https://www.atbmarket.com/promo/PivoSezon",
-      "end_time": "Jun 24, 2026 00:00:00",
-      "first_seen": "2026-06-17 00:01"
-    },
-    "dnipiva": {
-      "title": "Дні Пива",
-      "url": "https://www.atbmarket.com/promo/dnipiva",
-      "end_time": "Jun 24, 2026 00:00:00",
-      "first_seen": "2026-06-17 10:01"
-    },
     "sim_dniv": {
       "title": "Акція \"7 днів\"",
       "url": "https://www.atbmarket.com/promo/sim_dniv",
       "end_time": "Jun 25, 2026 00:00:00",
       "first_seen": "2026-06-18 00:01"
+    },
+    "denkonstytutsii": {
+      "title": "День Конституції та Державності",
+      "url": "https://www.atbmarket.com/promo/denkonstytutsii",
+      "end_time": "Jul 01, 2026 00:00:00",
+      "first_seen": "2026-06-24 00:01"
+    },
+    "sale_tovari": {
+      "title": "Суперціна",
+      "url": "https://www.atbmarket.com/promo/sale_tovari",
+      "end_time": "Jul 08, 2026 00:00:00",
+      "first_seen": "2026-06-24 00:01"
+    },
+    "loyalty": {
+      "title": "Лояльність",
+      "url": "https://www.atbmarket.com/promo/loyalty",
+      "end_time": "Jul 08, 2026 00:00:00",
+      "first_seen": "2026-06-24 00:01"
+    },
+    "micni": {
+      "title": "Ексклюзивна знижка з Карткою АТБ!",
+      "url": "https://www.atbmarket.com/promo/micni",
+      "end_time": "Jul 01, 2026 00:00:00",
+      "first_seen": "2026-06-24 00:01"
+    },
+    "VlasniTorhoviMarky": {
+      "title": "Власні торгові марки АТБ",
+      "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
+      "end_time": "Jul 01, 2026 00:00:00",
+      "first_seen": "2026-06-24 00:01"
     }
   },
-  "last_check": "2026-06-23 23:01"
+  "last_check": "2026-06-24 00:01"
 }
