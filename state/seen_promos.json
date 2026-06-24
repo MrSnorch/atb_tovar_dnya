@@ -14,7 +14,8 @@
     "loyalty",
     "micni",
     "VlasniTorhoviMarky",
-    "Dnivyna"
+    "Dnivyna",
+    "PivoSezon"
   ],
   "promos": {
     "deliveryzxc": {
@@ -106,7 +107,13 @@
       "url": "https://www.atbmarket.com/promo/Dnivyna",
       "end_time": "Jul 08, 2026 00:00:00",
       "first_seen": "2026-06-24 15:01"
+    },
+    "PivoSezon": {
+      "title": "Сезон пивних знижок",
+      "url": "https://www.atbmarket.com/promo/PivoSezon",
+      "end_time": "Jul 01, 2026 00:00:00",
+      "first_seen": "2026-06-24 18:01"
     }
   },
-  "last_check": "2026-06-24 17:01"
+  "last_check": "2026-06-24 18:01"
 }
