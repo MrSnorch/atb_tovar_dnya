@@ -13,7 +13,8 @@
     "sale_tovari",
     "loyalty",
     "micni",
-    "VlasniTorhoviMarky"
+    "VlasniTorhoviMarky",
+    "Dnivyna"
   ],
   "promos": {
     "deliveryzxc": {
@@ -99,7 +100,13 @@
       "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
       "end_time": "Jul 01, 2026 00:00:00",
       "first_seen": "2026-06-24 00:01"
+    },
+    "Dnivyna": {
+      "title": "Дні вина",
+      "url": "https://www.atbmarket.com/promo/Dnivyna",
+      "end_time": "Jul 08, 2026 00:00:00",
+      "first_seen": "2026-06-24 15:01"
     }
   },
-  "last_check": "2026-06-24 14:01"
+  "last_check": "2026-06-24 15:01"
 }
