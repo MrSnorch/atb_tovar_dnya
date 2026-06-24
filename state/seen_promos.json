@@ -8,14 +8,14 @@
     "Hroniky__suly_2_v_ATB",
     "Livoltek",
     "kupuydrugu",
-    "sim_dniv",
     "denkonstytutsii",
     "sale_tovari",
     "loyalty",
     "micni",
     "VlasniTorhoviMarky",
     "Dnivyna",
-    "PivoSezon"
+    "PivoSezon",
+    "sim_dniv"
   ],
   "promos": {
     "deliveryzxc": {
@@ -66,12 +66,6 @@
       "end_time": "Jun 30, 2026 00:00:00",
       "first_seen": "2026-06-17 00:01"
     },
-    "sim_dniv": {
-      "title": "Акція \"7 днів\"",
-      "url": "https://www.atbmarket.com/promo/sim_dniv",
-      "end_time": "Jun 25, 2026 00:00:00",
-      "first_seen": "2026-06-18 00:01"
-    },
     "denkonstytutsii": {
       "title": "День Конституції та Державності",
       "url": "https://www.atbmarket.com/promo/denkonstytutsii",
@@ -113,7 +107,13 @@
       "url": "https://www.atbmarket.com/promo/PivoSezon",
       "end_time": "Jul 01, 2026 00:00:00",
       "first_seen": "2026-06-24 18:01"
+    },
+    "sim_dniv": {
+      "title": "Акція \"7 днів\"",
+      "url": "https://www.atbmarket.com/promo/sim_dniv",
+      "end_time": "Jul 02, 2026 00:00:00",
+      "first_seen": "2026-06-25 00:01"
     }
   },
-  "last_check": "2026-06-24 23:01"
+  "last_check": "2026-06-25 00:01"
 }
