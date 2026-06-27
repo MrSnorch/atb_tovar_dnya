@@ -5,7 +5,6 @@
     "bezkoshtovna_dostavka",
     "MONSTER_energy",
     "chernihivske",
-    "Hroniky__suly_2_v_ATB",
     "Livoltek",
     "kupuydrugu",
     "denkonstytutsii",
@@ -46,12 +45,6 @@
       "title": "Вболівай з Чернігівським",
       "url": "https://www.atbmarket.com/promo/chernihivske",
       "end_time": "Jul 01, 2026 00:00:00",
-      "first_seen": "2026-06-01 18:01"
-    },
-    "Hroniky__suly_2_v_ATB": {
-      "title": "Хроніки Сили 2 в АТБ!",
-      "url": "https://www.atbmarket.com/promo/Hroniky__suly_2_v_ATB",
-      "end_time": "Jun 28, 2026 00:00:00",
       "first_seen": "2026-06-01 18:01"
     },
     "Livoltek": {
@@ -115,5 +108,5 @@
       "first_seen": "2026-06-25 00:01"
     }
   },
-  "last_check": "2026-06-27 23:01"
+  "last_check": "2026-06-28 00:01"
 }
