@@ -2,11 +2,8 @@
   "seen_slugs": [
     "deliveryzxc",
     "Hroniky_suly_2_v_ATB",
-    "bezkoshtovna_dostavka",
     "MONSTER_energy",
     "chernihivske",
-    "Livoltek",
-    "kupuydrugu",
     "denkonstytutsii",
     "sale_tovari",
     "loyalty",
@@ -29,12 +26,6 @@
       "end_time": "Sep 02, 2026 00:00:00",
       "first_seen": "2026-05-07 18:01"
     },
-    "bezkoshtovna_dostavka": {
-      "title": "Безкоштовна доставка",
-      "url": "https://www.atbmarket.com/promo/bezkoshtovna_dostavka",
-      "end_time": "Jun 30, 2026 00:00:00",
-      "first_seen": "2026-06-01 11:01"
-    },
     "MONSTER_energy": {
       "title": "MONSTER",
       "url": "https://www.atbmarket.com/promo/MONSTER_energy",
@@ -46,18 +37,6 @@
       "url": "https://www.atbmarket.com/promo/chernihivske",
       "end_time": "Jul 01, 2026 00:00:00",
       "first_seen": "2026-06-01 18:01"
-    },
-    "Livoltek": {
-      "title": "Livoltek",
-      "url": "https://www.atbmarket.com/promo/Livoltek",
-      "end_time": "Jun 30, 2026 00:00:00",
-      "first_seen": "2026-06-16 09:01"
-    },
-    "kupuydrugu": {
-      "title": "Купуй другу",
-      "url": "https://www.atbmarket.com/promo/kupuydrugu",
-      "end_time": "Jun 30, 2026 00:00:00",
-      "first_seen": "2026-06-17 00:01"
     },
     "denkonstytutsii": {
       "title": "День Конституції та Державності",
@@ -108,5 +87,5 @@
       "first_seen": "2026-06-25 00:01"
     }
   },
-  "last_check": "2026-06-29 23:01"
+  "last_check": "2026-06-30 00:01"
 }
