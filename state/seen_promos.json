@@ -11,7 +11,8 @@
     "VlasniTorhoviMarky",
     "Dnivyna",
     "PivoSezon",
-    "sim_dniv"
+    "sim_dniv",
+    "Livoltek"
   ],
   "promos": {
     "deliveryzxc": {
@@ -85,7 +86,13 @@
       "url": "https://www.atbmarket.com/promo/sim_dniv",
       "end_time": "Jul 02, 2026 00:00:00",
       "first_seen": "2026-06-25 00:01"
+    },
+    "Livoltek": {
+      "title": "Livoltek",
+      "url": "https://www.atbmarket.com/promo/Livoltek",
+      "end_time": "Jul 07, 2026 00:00:00",
+      "first_seen": "2026-06-30 16:01"
     }
   },
-  "last_check": "2026-06-30 15:01"
+  "last_check": "2026-06-30 16:01"
 }
