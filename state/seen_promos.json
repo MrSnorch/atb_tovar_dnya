@@ -5,13 +5,13 @@
     "sale_tovari",
     "loyalty",
     "Dnivyna",
-    "sim_dniv",
     "Livoltek",
     "economy",
     "micni",
     "VlasniTorhoviMarky",
     "PivoSezon",
-    "STALKER2"
+    "STALKER2",
+    "sim_dniv"
   ],
   "promos": {
     "deliveryzxc": {
@@ -43,12 +43,6 @@
       "url": "https://www.atbmarket.com/promo/Dnivyna",
       "end_time": "Jul 08, 2026 00:00:00",
       "first_seen": "2026-06-24 15:01"
-    },
-    "sim_dniv": {
-      "title": "Акція \"7 днів\"",
-      "url": "https://www.atbmarket.com/promo/sim_dniv",
-      "end_time": "Jul 02, 2026 00:00:00",
-      "first_seen": "2026-06-25 00:01"
     },
     "Livoltek": {
       "title": "Livoltek",
@@ -85,7 +79,13 @@
       "url": "https://www.atbmarket.com/promo/STALKER2",
       "end_time": "Aug 01, 2026 00:00:00",
       "first_seen": "2026-07-01 10:01"
+    },
+    "sim_dniv": {
+      "title": "Акція \"7 днів\"",
+      "url": "https://www.atbmarket.com/promo/sim_dniv",
+      "end_time": "Jul 09, 2026 00:00:00",
+      "first_seen": "2026-07-02 00:01"
     }
   },
-  "last_check": "2026-07-01 23:01"
+  "last_check": "2026-07-02 00:01"
 }
