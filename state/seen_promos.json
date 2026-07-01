@@ -10,7 +10,8 @@
     "economy",
     "micni",
     "VlasniTorhoviMarky",
-    "PivoSezon"
+    "PivoSezon",
+    "STALKER2"
   ],
   "promos": {
     "deliveryzxc": {
@@ -78,7 +79,13 @@
       "url": "https://www.atbmarket.com/promo/PivoSezon",
       "end_time": "Jul 08, 2026 00:00:00",
       "first_seen": "2026-07-01 00:01"
+    },
+    "STALKER2": {
+      "title": "S.T.A.L.K.E.R.2",
+      "url": "https://www.atbmarket.com/promo/STALKER2",
+      "end_time": "Aug 01, 2026 00:00:00",
+      "first_seen": "2026-07-01 10:01"
     }
   },
-  "last_check": "2026-07-01 09:01"
+  "last_check": "2026-07-01 10:01"
 }
