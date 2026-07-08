@@ -3,14 +3,14 @@
     "deliveryzxc",
     "Hroniky_suly_2_v_ATB",
     "STALKER2",
-    "sim_dniv",
     "denderzhavnosti",
     "sale_tovari",
     "loyalty",
     "micni",
     "VlasniTorhoviMarky",
     "PivoSezon",
-    "dnipiva"
+    "dnipiva",
+    "sim_dniv"
   ],
   "promos": {
     "deliveryzxc": {
@@ -30,12 +30,6 @@
       "url": "https://www.atbmarket.com/promo/STALKER2",
       "end_time": "Aug 01, 2026 00:00:00",
       "first_seen": "2026-07-01 10:01"
-    },
-    "sim_dniv": {
-      "title": "Акція \"7 днів\"",
-      "url": "https://www.atbmarket.com/promo/sim_dniv",
-      "end_time": "Jul 09, 2026 00:00:00",
-      "first_seen": "2026-07-02 00:01"
     },
     "denderzhavnosti": {
       "title": "День Державності",
@@ -78,7 +72,13 @@
       "url": "https://www.atbmarket.com/promo/dnipiva",
       "end_time": "Jul 15, 2026 00:00:00",
       "first_seen": "2026-07-08 00:01"
+    },
+    "sim_dniv": {
+      "title": "Акція \"7 днів\"",
+      "url": "https://www.atbmarket.com/promo/sim_dniv",
+      "end_time": "Jul 16, 2026 00:00:00",
+      "first_seen": "2026-07-09 00:01"
     }
   },
-  "last_check": "2026-07-08 23:01"
+  "last_check": "2026-07-09 00:01"
 }
