@@ -3,14 +3,14 @@
     "deliveryzxc",
     "Hroniky_suly_2_v_ATB",
     "STALKER2",
-    "denderzhavnosti",
     "sale_tovari",
     "loyalty",
+    "sim_dniv",
+    "denderzhavnosti",
     "micni",
     "VlasniTorhoviMarky",
     "PivoSezon",
-    "dnipiva",
-    "sim_dniv"
+    "dnipiva"
   ],
   "promos": {
     "deliveryzxc": {
@@ -31,12 +31,6 @@
       "end_time": "Aug 01, 2026 00:00:00",
       "first_seen": "2026-07-01 10:01"
     },
-    "denderzhavnosti": {
-      "title": "День Державності",
-      "url": "https://www.atbmarket.com/promo/denderzhavnosti",
-      "end_time": "Jul 15, 2026 00:00:00",
-      "first_seen": "2026-07-08 00:01"
-    },
     "sale_tovari": {
       "title": "Суперціна",
       "url": "https://www.atbmarket.com/promo/sale_tovari",
@@ -49,36 +43,42 @@
       "end_time": "Jul 22, 2026 00:00:00",
       "first_seen": "2026-07-08 00:01"
     },
-    "micni": {
-      "title": "Ексклюзивна знижка з Карткою АТБ!",
-      "url": "https://www.atbmarket.com/promo/micni",
-      "end_time": "Jul 15, 2026 00:00:00",
-      "first_seen": "2026-07-08 00:01"
-    },
-    "VlasniTorhoviMarky": {
-      "title": "Власні торгові марки АТБ",
-      "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
-      "end_time": "Jul 15, 2026 00:00:00",
-      "first_seen": "2026-07-08 00:01"
-    },
-    "PivoSezon": {
-      "title": "Сезон пивних знижок",
-      "url": "https://www.atbmarket.com/promo/PivoSezon",
-      "end_time": "Jul 15, 2026 00:00:00",
-      "first_seen": "2026-07-08 00:01"
-    },
-    "dnipiva": {
-      "title": "Дні Пива",
-      "url": "https://www.atbmarket.com/promo/dnipiva",
-      "end_time": "Jul 15, 2026 00:00:00",
-      "first_seen": "2026-07-08 00:01"
-    },
     "sim_dniv": {
       "title": "Акція \"7 днів\"",
       "url": "https://www.atbmarket.com/promo/sim_dniv",
       "end_time": "Jul 16, 2026 00:00:00",
       "first_seen": "2026-07-09 00:01"
+    },
+    "denderzhavnosti": {
+      "title": "День Державності",
+      "url": "https://www.atbmarket.com/promo/denderzhavnosti",
+      "end_time": "Jul 22, 2026 00:00:00",
+      "first_seen": "2026-07-15 00:01"
+    },
+    "micni": {
+      "title": "Ексклюзивна знижка з Карткою АТБ!",
+      "url": "https://www.atbmarket.com/promo/micni",
+      "end_time": "Jul 22, 2026 00:00:00",
+      "first_seen": "2026-07-15 00:01"
+    },
+    "VlasniTorhoviMarky": {
+      "title": "Власні торгові марки АТБ",
+      "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
+      "end_time": "Jul 22, 2026 00:00:00",
+      "first_seen": "2026-07-15 00:01"
+    },
+    "PivoSezon": {
+      "title": "Сезон пивних знижок",
+      "url": "https://www.atbmarket.com/promo/PivoSezon",
+      "end_time": "Jul 22, 2026 00:00:00",
+      "first_seen": "2026-07-15 00:01"
+    },
+    "dnipiva": {
+      "title": "Дні Пива",
+      "url": "https://www.atbmarket.com/promo/dnipiva",
+      "end_time": "Jul 22, 2026 00:00:00",
+      "first_seen": "2026-07-15 00:01"
     }
   },
-  "last_check": "2026-07-14 23:01"
+  "last_check": "2026-07-15 00:01"
 }
