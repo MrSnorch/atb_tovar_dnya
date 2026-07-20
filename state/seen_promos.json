@@ -10,7 +10,8 @@
     "VlasniTorhoviMarky",
     "PivoSezon",
     "dnipiva",
-    "sim_dniv"
+    "sim_dniv",
+    "ClicktoPayVisa2"
   ],
   "promos": {
     "deliveryzxc": {
@@ -78,7 +79,13 @@
       "url": "https://www.atbmarket.com/promo/sim_dniv",
       "end_time": "Jul 23, 2026 00:00:00",
       "first_seen": "2026-07-16 00:01"
+    },
+    "ClicktoPayVisa2": {
+      "title": "Доставка з  Visa & Click to pay!",
+      "url": "https://www.atbmarket.com/promo/ClicktoPayVisa2",
+      "end_time": "Aug 11, 2026 00:00:00",
+      "first_seen": "2026-07-20 15:01"
     }
   },
-  "last_check": "2026-07-20 14:01"
+  "last_check": "2026-07-20 15:01"
 }
