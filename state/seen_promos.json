@@ -8,7 +8,6 @@
     "economy",
     "sale_tovari",
     "loyalty",
-    "Fairy",
     "micni",
     "VlasniTorhoviMarky",
     "sim_dniv"
@@ -62,12 +61,6 @@
       "end_time": "Aug 05, 2026 00:00:00",
       "first_seen": "2026-07-22 00:01"
     },
-    "Fairy": {
-      "title": "Вигідні покупки в АТБ",
-      "url": "https://www.atbmarket.com/promo/Fairy",
-      "end_time": "Jul 28, 2026 00:00:00",
-      "first_seen": "2026-07-22 00:01"
-    },
     "micni": {
       "title": "Ексклюзивна знижка з Карткою АТБ!",
       "url": "https://www.atbmarket.com/promo/micni",
@@ -87,5 +80,5 @@
       "first_seen": "2026-07-23 00:01"
     }
   },
-  "last_check": "2026-07-27 23:01"
+  "last_check": "2026-07-28 00:01"
 }
