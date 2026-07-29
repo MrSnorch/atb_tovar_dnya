@@ -7,10 +7,10 @@
     "Vynafrancii",
     "sale_tovari",
     "loyalty",
-    "sim_dniv",
     "economy",
     "micni",
-    "VlasniTorhoviMarky"
+    "VlasniTorhoviMarky",
+    "sim_dniv"
   ],
   "promos": {
     "deliveryzxc": {
@@ -55,12 +55,6 @@
       "end_time": "Aug 05, 2026 00:00:00",
       "first_seen": "2026-07-22 00:01"
     },
-    "sim_dniv": {
-      "title": "Акція \"7 днів\"",
-      "url": "https://www.atbmarket.com/promo/sim_dniv",
-      "end_time": "Jul 30, 2026 00:00:00",
-      "first_seen": "2026-07-23 00:01"
-    },
     "economy": {
       "title": "Акція \"Економія\"",
       "url": "https://www.atbmarket.com/promo/economy",
@@ -78,7 +72,13 @@
       "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
       "end_time": "Aug 05, 2026 00:00:00",
       "first_seen": "2026-07-29 00:01"
+    },
+    "sim_dniv": {
+      "title": "Акція \"7 днів\"",
+      "url": "https://www.atbmarket.com/promo/sim_dniv",
+      "end_time": "Aug 06, 2026 00:00:00",
+      "first_seen": "2026-07-30 00:01"
     }
   },
-  "last_check": "2026-07-29 23:01"
+  "last_check": "2026-07-30 00:01"
 }
