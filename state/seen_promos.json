@@ -10,7 +10,8 @@
     "economy",
     "micni",
     "VlasniTorhoviMarky",
-    "sim_dniv"
+    "sim_dniv",
+    "Livoltek"
   ],
   "promos": {
     "deliveryzxc": {
@@ -78,7 +79,13 @@
       "url": "https://www.atbmarket.com/promo/sim_dniv",
       "end_time": "Aug 06, 2026 00:00:00",
       "first_seen": "2026-07-30 00:01"
+    },
+    "Livoltek": {
+      "title": "Livoltek",
+      "url": "https://www.atbmarket.com/promo/Livoltek",
+      "end_time": "Aug 31, 2026 00:00:00",
+      "first_seen": "2026-07-30 17:01"
     }
   },
-  "last_check": "2026-07-30 16:01"
+  "last_check": "2026-07-30 17:01"
 }
