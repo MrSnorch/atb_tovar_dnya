@@ -3,14 +3,14 @@
     "deliveryzxc",
     "Hroniky_suly_2_v_ATB",
     "ClicktoPayVisa2",
-    "sim_dniv",
     "Livoltek",
     "chernigivske",
     "economy",
     "sale_tovari",
     "loyalty",
     "micni",
-    "VlasniTorhoviMarky"
+    "VlasniTorhoviMarky",
+    "sim_dniv"
   ],
   "promos": {
     "deliveryzxc": {
@@ -30,12 +30,6 @@
       "url": "https://www.atbmarket.com/promo/ClicktoPayVisa2",
       "end_time": "Aug 11, 2026 00:00:00",
       "first_seen": "2026-07-20 15:01"
-    },
-    "sim_dniv": {
-      "title": "Акція \"7 днів\"",
-      "url": "https://www.atbmarket.com/promo/sim_dniv",
-      "end_time": "Aug 06, 2026 00:00:00",
-      "first_seen": "2026-07-30 00:01"
     },
     "Livoltek": {
       "title": "Livoltek",
@@ -78,7 +72,13 @@
       "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
       "end_time": "Aug 12, 2026 00:00:00",
       "first_seen": "2026-08-05 00:01"
+    },
+    "sim_dniv": {
+      "title": "Акція \"7 днів\"",
+      "url": "https://www.atbmarket.com/promo/sim_dniv",
+      "end_time": "Aug 13, 2026 00:00:00",
+      "first_seen": "2026-08-06 00:01"
     }
   },
-  "last_check": "2026-08-05 23:01"
+  "last_check": "2026-08-06 00:01"
 }
