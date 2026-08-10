@@ -2,7 +2,6 @@
   "seen_slugs": [
     "deliveryzxc",
     "Hroniky_suly_2_v_ATB",
-    "ClicktoPayVisa2",
     "Livoltek",
     "chernigivske",
     "economy",
@@ -25,12 +24,6 @@
       "url": "https://www.atbmarket.com/promo/Hroniky_suly_2_v_ATB",
       "end_time": "Sep 02, 2026 00:00:00",
       "first_seen": "2026-05-07 18:01"
-    },
-    "ClicktoPayVisa2": {
-      "title": "Доставка з  Visa & Click to pay!",
-      "url": "https://www.atbmarket.com/promo/ClicktoPayVisa2",
-      "end_time": "Aug 11, 2026 00:00:00",
-      "first_seen": "2026-07-20 15:01"
     },
     "Livoltek": {
       "title": "Livoltek",
@@ -87,5 +80,5 @@
       "first_seen": "2026-08-06 15:01"
     }
   },
-  "last_check": "2026-08-10 23:01"
+  "last_check": "2026-08-11 00:01"
 }
