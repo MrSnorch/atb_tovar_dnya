@@ -4,13 +4,14 @@
     "Hroniky_suly_2_v_ATB",
     "Livoltek",
     "chernigivske",
-    "economy",
     "sale_tovari",
     "loyalty",
-    "micni",
-    "VlasniTorhoviMarky",
     "sim_dniv",
-    "STALKER2"
+    "STALKER2",
+    "den_nezalezhnosti",
+    "economy",
+    "micni",
+    "VlasniTorhoviMarky"
   ],
   "promos": {
     "deliveryzxc": {
@@ -37,12 +38,6 @@
       "end_time": "Sep 01, 2026 00:00:00",
       "first_seen": "2026-08-01 00:01"
     },
-    "economy": {
-      "title": "Акція \"Економія\"",
-      "url": "https://www.atbmarket.com/promo/economy",
-      "end_time": "Aug 12, 2026 00:00:00",
-      "first_seen": "2026-08-05 00:01"
-    },
     "sale_tovari": {
       "title": "Суперціна",
       "url": "https://www.atbmarket.com/promo/sale_tovari",
@@ -53,18 +48,6 @@
       "title": "Лояльність",
       "url": "https://www.atbmarket.com/promo/loyalty",
       "end_time": "Aug 19, 2026 00:00:00",
-      "first_seen": "2026-08-05 00:01"
-    },
-    "micni": {
-      "title": "Ексклюзивна знижка з Карткою АТБ!",
-      "url": "https://www.atbmarket.com/promo/micni",
-      "end_time": "Aug 12, 2026 00:00:00",
-      "first_seen": "2026-08-05 00:01"
-    },
-    "VlasniTorhoviMarky": {
-      "title": "Власні торгові марки АТБ",
-      "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
-      "end_time": "Aug 12, 2026 00:00:00",
       "first_seen": "2026-08-05 00:01"
     },
     "sim_dniv": {
@@ -78,7 +61,31 @@
       "url": "https://www.atbmarket.com/promo/STALKER2",
       "end_time": "Sep 01, 2026 00:00:00",
       "first_seen": "2026-08-06 15:01"
+    },
+    "den_nezalezhnosti": {
+      "title": "День Незалежності",
+      "url": "https://www.atbmarket.com/promo/den_nezalezhnosti",
+      "end_time": "Aug 19, 2026 00:00:00",
+      "first_seen": "2026-08-12 00:01"
+    },
+    "economy": {
+      "title": "Акція \"Економія\"",
+      "url": "https://www.atbmarket.com/promo/economy",
+      "end_time": "Aug 19, 2026 00:00:00",
+      "first_seen": "2026-08-12 00:01"
+    },
+    "micni": {
+      "title": "Ексклюзивна знижка з Карткою АТБ!",
+      "url": "https://www.atbmarket.com/promo/micni",
+      "end_time": "Aug 19, 2026 00:00:00",
+      "first_seen": "2026-08-12 00:01"
+    },
+    "VlasniTorhoviMarky": {
+      "title": "Власні торгові марки АТБ",
+      "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
+      "end_time": "Aug 19, 2026 00:00:00",
+      "first_seen": "2026-08-12 00:01"
     }
   },
-  "last_check": "2026-08-11 23:01"
+  "last_check": "2026-08-12 00:01"
 }
