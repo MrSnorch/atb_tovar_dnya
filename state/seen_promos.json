@@ -6,12 +6,12 @@
     "chernigivske",
     "sale_tovari",
     "loyalty",
-    "sim_dniv",
     "STALKER2",
     "den_nezalezhnosti",
     "economy",
     "micni",
-    "VlasniTorhoviMarky"
+    "VlasniTorhoviMarky",
+    "sim_dniv"
   ],
   "promos": {
     "deliveryzxc": {
@@ -50,12 +50,6 @@
       "end_time": "Aug 19, 2026 00:00:00",
       "first_seen": "2026-08-05 00:01"
     },
-    "sim_dniv": {
-      "title": "Акція \"7 днів\"",
-      "url": "https://www.atbmarket.com/promo/sim_dniv",
-      "end_time": "Aug 13, 2026 00:00:00",
-      "first_seen": "2026-08-06 00:01"
-    },
     "STALKER2": {
       "title": "S.T.A.L.K.E.R.2",
       "url": "https://www.atbmarket.com/promo/STALKER2",
@@ -85,7 +79,13 @@
       "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
       "end_time": "Aug 19, 2026 00:00:00",
       "first_seen": "2026-08-12 00:01"
+    },
+    "sim_dniv": {
+      "title": "Акція \"7 днів\"",
+      "url": "https://www.atbmarket.com/promo/sim_dniv",
+      "end_time": "Aug 20, 2026 00:00:00",
+      "first_seen": "2026-08-13 00:01"
     }
   },
-  "last_check": "2026-08-12 23:01"
+  "last_check": "2026-08-13 00:01"
 }
