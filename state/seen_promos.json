@@ -11,7 +11,8 @@
     "economy",
     "micni",
     "VlasniTorhoviMarky",
-    "sim_dniv"
+    "sim_dniv",
+    "promo_visa_delivery"
   ],
   "promos": {
     "deliveryzxc": {
@@ -85,7 +86,13 @@
       "url": "https://www.atbmarket.com/promo/sim_dniv",
       "end_time": "Aug 20, 2026 00:00:00",
       "first_seen": "2026-08-13 00:01"
+    },
+    "promo_visa_delivery": {
+      "title": "Безкоштовна доставка з АТБ та Visa!",
+      "url": "https://www.atbmarket.com/promo/promo_visa_delivery",
+      "end_time": "Aug 31, 2026 00:00:00",
+      "first_seen": "2026-08-13 10:01"
     }
   },
-  "last_check": "2026-08-13 09:01"
+  "last_check": "2026-08-13 10:01"
 }
