@@ -5,14 +5,14 @@
     "Livoltek",
     "chernigivske",
     "STALKER2",
-    "sim_dniv",
     "promo_visa_delivery",
     "den_nezalezhnosti",
     "sale_tovari",
     "micni",
     "Vynasvitu",
     "VlasniTorhoviMarky",
-    "dnipiva"
+    "dnipiva",
+    "sim_dniv"
   ],
   "promos": {
     "deliveryzxc": {
@@ -44,12 +44,6 @@
       "url": "https://www.atbmarket.com/promo/STALKER2",
       "end_time": "Sep 01, 2026 00:00:00",
       "first_seen": "2026-08-06 15:01"
-    },
-    "sim_dniv": {
-      "title": "Акція \"7 днів\"",
-      "url": "https://www.atbmarket.com/promo/sim_dniv",
-      "end_time": "Aug 20, 2026 00:00:00",
-      "first_seen": "2026-08-13 00:01"
     },
     "promo_visa_delivery": {
       "title": "Безкоштовна доставка з АТБ та Visa!",
@@ -92,7 +86,13 @@
       "url": "https://www.atbmarket.com/promo/dnipiva",
       "end_time": "Aug 26, 2026 00:00:00",
       "first_seen": "2026-08-19 00:01"
+    },
+    "sim_dniv": {
+      "title": "Акція \"7 днів\"",
+      "url": "https://www.atbmarket.com/promo/sim_dniv",
+      "end_time": "Aug 27, 2026 00:00:00",
+      "first_seen": "2026-08-20 00:01"
     }
   },
-  "last_check": "2026-08-19 23:01"
+  "last_check": "2026-08-20 00:01"
 }
