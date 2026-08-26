@@ -8,12 +8,12 @@
     "promo_visa_delivery",
     "sale_tovari",
     "Vynasvitu",
-    "sim_dniv",
     "Shkilnuy_yarmarok",
     "micni",
     "economy",
     "VlasniTorhoviMarky",
-    "dnipiva"
+    "dnipiva",
+    "sim_dniv"
   ],
   "promos": {
     "deliveryzxc": {
@@ -64,12 +64,6 @@
       "end_time": "Sep 02, 2026 00:00:00",
       "first_seen": "2026-08-19 00:01"
     },
-    "sim_dniv": {
-      "title": "Акція \"7 днів\"",
-      "url": "https://www.atbmarket.com/promo/sim_dniv",
-      "end_time": "Aug 27, 2026 00:00:00",
-      "first_seen": "2026-08-20 00:01"
-    },
     "Shkilnuy_yarmarok": {
       "title": "Шкільний ярмарок",
       "url": "https://www.atbmarket.com/promo/Shkilnuy_yarmarok",
@@ -99,7 +93,13 @@
       "url": "https://www.atbmarket.com/promo/dnipiva",
       "end_time": "Sep 02, 2026 00:00:00",
       "first_seen": "2026-08-26 00:01"
+    },
+    "sim_dniv": {
+      "title": "Акція \"7 днів\"",
+      "url": "https://www.atbmarket.com/promo/sim_dniv",
+      "end_time": "Sep 03, 2026 00:00:00",
+      "first_seen": "2026-08-27 00:01"
     }
   },
-  "last_check": "2026-08-26 23:01"
+  "last_check": "2026-08-27 00:01"
 }
