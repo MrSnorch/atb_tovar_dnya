@@ -2,10 +2,8 @@
   "seen_slugs": [
     "deliveryzxc",
     "Hroniky_suly_2_v_ATB",
-    "Livoltek",
     "chernigivske",
     "STALKER2",
-    "promo_visa_delivery",
     "sale_tovari",
     "Vynasvitu",
     "Shkilnuy_yarmarok",
@@ -28,12 +26,6 @@
       "end_time": "Sep 02, 2026 00:00:00",
       "first_seen": "2026-05-07 18:01"
     },
-    "Livoltek": {
-      "title": "Livoltek",
-      "url": "https://www.atbmarket.com/promo/Livoltek",
-      "end_time": "Aug 31, 2026 00:00:00",
-      "first_seen": "2026-07-30 17:01"
-    },
     "chernigivske": {
       "title": "Чернігівське",
       "url": "https://www.atbmarket.com/promo/chernigivske",
@@ -45,12 +37,6 @@
       "url": "https://www.atbmarket.com/promo/STALKER2",
       "end_time": "Sep 01, 2026 00:00:00",
       "first_seen": "2026-08-06 15:01"
-    },
-    "promo_visa_delivery": {
-      "title": "Безкоштовна доставка з АТБ та Visa!",
-      "url": "https://www.atbmarket.com/promo/promo_visa_delivery",
-      "end_time": "Aug 31, 2026 00:00:00",
-      "first_seen": "2026-08-13 10:01"
     },
     "sale_tovari": {
       "title": "Суперціна",
@@ -101,5 +87,5 @@
       "first_seen": "2026-08-27 00:01"
     }
   },
-  "last_check": "2026-08-30 23:01"
+  "last_check": "2026-08-31 00:01"
 }
