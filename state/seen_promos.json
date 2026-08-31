@@ -2,7 +2,6 @@
   "seen_slugs": [
     "deliveryzxc",
     "Hroniky_suly_2_v_ATB",
-    "chernigivske",
     "STALKER2",
     "sale_tovari",
     "Vynasvitu",
@@ -11,8 +10,7 @@
     "economy",
     "VlasniTorhoviMarky",
     "dnipiva",
-    "sim_dniv",
-    "promo_visa_delivery"
+    "sim_dniv"
   ],
   "promos": {
     "deliveryzxc": {
@@ -26,12 +24,6 @@
       "url": "https://www.atbmarket.com/promo/Hroniky_suly_2_v_ATB",
       "end_time": "Sep 02, 2026 00:00:00",
       "first_seen": "2026-05-07 18:01"
-    },
-    "chernigivske": {
-      "title": "Чернігівське",
-      "url": "https://www.atbmarket.com/promo/chernigivske",
-      "end_time": "Sep 01, 2026 00:00:00",
-      "first_seen": "2026-08-01 00:01"
     },
     "STALKER2": {
       "title": "S.T.A.L.K.E.R.2",
@@ -86,13 +78,7 @@
       "url": "https://www.atbmarket.com/promo/sim_dniv",
       "end_time": "Sep 03, 2026 00:00:00",
       "first_seen": "2026-08-27 00:01"
-    },
-    "promo_visa_delivery": {
-      "title": "Безкоштовна доставка з АТБ та Visa!",
-      "url": "https://www.atbmarket.com/promo/promo_visa_delivery",
-      "end_time": "Sep 01, 2026 00:00:00",
-      "first_seen": "2026-08-31 09:01"
     }
   },
-  "last_check": "2026-08-31 23:01"
+  "last_check": "2026-09-01 00:01"
 }
