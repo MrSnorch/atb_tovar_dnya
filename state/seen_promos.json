@@ -10,7 +10,9 @@
     "economy",
     "VlasniTorhoviMarky",
     "dnipiva",
-    "sim_dniv"
+    "sim_dniv",
+    "dostavka1",
+    "L%C3%B6wenbr%C3%A4u"
   ],
   "promos": {
     "deliveryzxc": {
@@ -78,7 +80,19 @@
       "url": "https://www.atbmarket.com/promo/sim_dniv",
       "end_time": "Sep 03, 2026 00:00:00",
       "first_seen": "2026-08-27 00:01"
+    },
+    "dostavka1": {
+      "title": "Весь вересень — доставка з АТБ за 1 грн",
+      "url": "https://www.atbmarket.com/promo/dostavka1",
+      "end_time": "Oct 01, 2026 00:00:00",
+      "first_seen": "2026-09-01 01:01"
+    },
+    "L%C3%B6wenbr%C3%A4u": {
+      "title": "Löwenbräu Original",
+      "url": "https://www.atbmarket.com/promo/L%C3%B6wenbr%C3%A4u",
+      "end_time": "Oct 01, 2026 00:00:00",
+      "first_seen": "2026-09-01 01:01"
     }
   },
-  "last_check": "2026-09-01 00:01"
+  "last_check": "2026-09-01 01:01"
 }
