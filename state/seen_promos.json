@@ -1,26 +1,17 @@
 {
   "seen_slugs": [
-    "deliveryzxc",
     "Hroniky_suly_2_v_ATB",
     "STALKER2",
-    "sale_tovari",
-    "Vynasvitu",
-    "Shkilnuy_yarmarok",
-    "micni",
-    "economy",
-    "VlasniTorhoviMarky",
-    "dnipiva",
     "sim_dniv",
     "dostavka1",
-    "L%C3%B6wenbr%C3%A4u"
+    "L%C3%B6wenbr%C3%A4u",
+    "Shkilnuy_yarmarok",
+    "sale_tovari",
+    "micni",
+    "economy",
+    "VlasniTorhoviMarky"
   ],
   "promos": {
-    "deliveryzxc": {
-      "title": "Безкоштовна доставка з ХС",
-      "url": "https://www.atbmarket.com/promo/deliveryzxc",
-      "end_time": "Sep 02, 2026 00:00:00",
-      "first_seen": "2026-05-07 15:01"
-    },
     "Hroniky_suly_2_v_ATB": {
       "title": "Хроніки Сили 2 в АТБ!",
       "url": "https://www.atbmarket.com/promo/Hroniky_suly_2_v_ATB",
@@ -32,48 +23,6 @@
       "url": "https://www.atbmarket.com/promo/STALKER2",
       "end_time": "Oct 01, 2026 00:00:00",
       "first_seen": "2026-08-06 15:01"
-    },
-    "sale_tovari": {
-      "title": "Суперціна",
-      "url": "https://www.atbmarket.com/promo/sale_tovari",
-      "end_time": "Sep 02, 2026 00:00:00",
-      "first_seen": "2026-08-19 00:01"
-    },
-    "Vynasvitu": {
-      "title": "Вина світу",
-      "url": "https://www.atbmarket.com/promo/Vynasvitu",
-      "end_time": "Sep 02, 2026 00:00:00",
-      "first_seen": "2026-08-19 00:01"
-    },
-    "Shkilnuy_yarmarok": {
-      "title": "Шкільний ярмарок",
-      "url": "https://www.atbmarket.com/promo/Shkilnuy_yarmarok",
-      "end_time": "Sep 02, 2026 00:00:00",
-      "first_seen": "2026-08-26 00:01"
-    },
-    "micni": {
-      "title": "Ексклюзивна знижка з Карткою АТБ!",
-      "url": "https://www.atbmarket.com/promo/micni",
-      "end_time": "Sep 02, 2026 00:00:00",
-      "first_seen": "2026-08-26 00:01"
-    },
-    "economy": {
-      "title": "Акція \"Економія\"",
-      "url": "https://www.atbmarket.com/promo/economy",
-      "end_time": "Sep 02, 2026 00:00:00",
-      "first_seen": "2026-08-26 00:01"
-    },
-    "VlasniTorhoviMarky": {
-      "title": "Власні торгові марки АТБ",
-      "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
-      "end_time": "Sep 02, 2026 00:00:00",
-      "first_seen": "2026-08-26 00:01"
-    },
-    "dnipiva": {
-      "title": "Дні Пива",
-      "url": "https://www.atbmarket.com/promo/dnipiva",
-      "end_time": "Sep 02, 2026 00:00:00",
-      "first_seen": "2026-08-26 00:01"
     },
     "sim_dniv": {
       "title": "Акція \"7 днів\"",
@@ -92,7 +41,37 @@
       "url": "https://www.atbmarket.com/promo/L%C3%B6wenbr%C3%A4u",
       "end_time": "Oct 01, 2026 00:00:00",
       "first_seen": "2026-09-01 01:01"
+    },
+    "Shkilnuy_yarmarok": {
+      "title": "Шкільний ярмарок",
+      "url": "https://www.atbmarket.com/promo/Shkilnuy_yarmarok",
+      "end_time": "Sep 09, 2026 00:00:00",
+      "first_seen": "2026-09-02 00:01"
+    },
+    "sale_tovari": {
+      "title": "Суперціна",
+      "url": "https://www.atbmarket.com/promo/sale_tovari",
+      "end_time": "Sep 16, 2026 00:00:00",
+      "first_seen": "2026-09-02 00:01"
+    },
+    "micni": {
+      "title": "Ексклюзивна знижка з Карткою АТБ!",
+      "url": "https://www.atbmarket.com/promo/micni",
+      "end_time": "Sep 09, 2026 00:00:00",
+      "first_seen": "2026-09-02 00:01"
+    },
+    "economy": {
+      "title": "Акція \"Економія\"",
+      "url": "https://www.atbmarket.com/promo/economy",
+      "end_time": "Sep 09, 2026 00:00:00",
+      "first_seen": "2026-09-02 00:01"
+    },
+    "VlasniTorhoviMarky": {
+      "title": "Власні торгові марки АТБ",
+      "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
+      "end_time": "Sep 08, 2026 00:00:00",
+      "first_seen": "2026-09-02 00:01"
     }
   },
-  "last_check": "2026-09-01 23:01"
+  "last_check": "2026-09-02 00:01"
 }
