@@ -9,7 +9,8 @@
     "sale_tovari",
     "micni",
     "economy",
-    "VlasniTorhoviMarky"
+    "VlasniTorhoviMarky",
+    "loyalty"
   ],
   "promos": {
     "Hroniky_suly_2_v_ATB": {
@@ -71,7 +72,13 @@
       "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
       "end_time": "Sep 08, 2026 00:00:00",
       "first_seen": "2026-09-02 00:01"
+    },
+    "loyalty": {
+      "title": "Лояльність",
+      "url": "https://www.atbmarket.com/promo/loyalty",
+      "end_time": "Sep 10, 2026 00:00:00",
+      "first_seen": "2026-09-02 18:01"
     }
   },
-  "last_check": "2026-09-02 17:01"
+  "last_check": "2026-09-02 18:01"
 }
