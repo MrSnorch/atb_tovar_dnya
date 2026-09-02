@@ -2,7 +2,6 @@
   "seen_slugs": [
     "Hroniky_suly_2_v_ATB",
     "STALKER2",
-    "sim_dniv",
     "dostavka1",
     "L%C3%B6wenbr%C3%A4u",
     "Shkilnuy_yarmarok",
@@ -10,7 +9,8 @@
     "micni",
     "economy",
     "VlasniTorhoviMarky",
-    "loyalty"
+    "loyalty",
+    "sim_dniv"
   ],
   "promos": {
     "Hroniky_suly_2_v_ATB": {
@@ -24,12 +24,6 @@
       "url": "https://www.atbmarket.com/promo/STALKER2",
       "end_time": "Oct 01, 2026 00:00:00",
       "first_seen": "2026-08-06 15:01"
-    },
-    "sim_dniv": {
-      "title": "Акція \"7 днів\"",
-      "url": "https://www.atbmarket.com/promo/sim_dniv",
-      "end_time": "Sep 03, 2026 00:00:00",
-      "first_seen": "2026-08-27 00:01"
     },
     "dostavka1": {
       "title": "Весь вересень — доставка з АТБ за 1 грн",
@@ -78,7 +72,13 @@
       "url": "https://www.atbmarket.com/promo/loyalty",
       "end_time": "Sep 10, 2026 00:00:00",
       "first_seen": "2026-09-02 18:01"
+    },
+    "sim_dniv": {
+      "title": "Акція \"7 днів\"",
+      "url": "https://www.atbmarket.com/promo/sim_dniv",
+      "end_time": "Sep 09, 2026 00:00:00",
+      "first_seen": "2026-09-03 00:01"
     }
   },
-  "last_check": "2026-09-02 23:01"
+  "last_check": "2026-09-03 00:01"
 }
