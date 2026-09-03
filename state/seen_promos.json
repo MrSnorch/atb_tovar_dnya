@@ -10,7 +10,8 @@
     "economy",
     "VlasniTorhoviMarky",
     "loyalty",
-    "sim_dniv"
+    "sim_dniv",
+    "Jacobs"
   ],
   "promos": {
     "Hroniky_suly_2_v_ATB": {
@@ -78,7 +79,13 @@
       "url": "https://www.atbmarket.com/promo/sim_dniv",
       "end_time": "Sep 09, 2026 00:00:00",
       "first_seen": "2026-09-03 00:01"
+    },
+    "Jacobs": {
+      "title": "Jacobs Monarch",
+      "url": "https://www.atbmarket.com/promo/Jacobs",
+      "end_time": "Sep 09, 2026 00:00:00",
+      "first_seen": "2026-09-03 14:01"
     }
   },
-  "last_check": "2026-09-03 13:28"
+  "last_check": "2026-09-03 14:01"
 }
