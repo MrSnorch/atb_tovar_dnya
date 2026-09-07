@@ -8,7 +8,6 @@
     "sale_tovari",
     "micni",
     "economy",
-    "VlasniTorhoviMarky",
     "loyalty",
     "sim_dniv",
     "Jacobs"
@@ -62,12 +61,6 @@
       "end_time": "Sep 09, 2026 00:00:00",
       "first_seen": "2026-09-02 00:01"
     },
-    "VlasniTorhoviMarky": {
-      "title": "Власні торгові марки АТБ",
-      "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
-      "end_time": "Sep 08, 2026 00:00:00",
-      "first_seen": "2026-09-02 00:01"
-    },
     "loyalty": {
       "title": "Лояльність",
       "url": "https://www.atbmarket.com/promo/loyalty",
@@ -87,5 +80,5 @@
       "first_seen": "2026-09-03 14:01"
     }
   },
-  "last_check": "2026-09-07 23:01"
+  "last_check": "2026-09-08 00:01"
 }
