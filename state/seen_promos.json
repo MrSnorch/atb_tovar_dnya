@@ -4,13 +4,9 @@
     "STALKER2",
     "dostavka1",
     "L%C3%B6wenbr%C3%A4u",
-    "Shkilnuy_yarmarok",
     "sale_tovari",
-    "micni",
-    "economy",
     "loyalty",
-    "sim_dniv",
-    "Jacobs"
+    "economy"
   ],
   "promos": {
     "Hroniky_suly_2_v_ATB": {
@@ -37,48 +33,24 @@
       "end_time": "Oct 01, 2026 00:00:00",
       "first_seen": "2026-09-01 01:01"
     },
-    "Shkilnuy_yarmarok": {
-      "title": "Шкільний ярмарок",
-      "url": "https://www.atbmarket.com/promo/Shkilnuy_yarmarok",
-      "end_time": "Sep 09, 2026 00:00:00",
-      "first_seen": "2026-09-02 00:01"
-    },
     "sale_tovari": {
       "title": "Суперціна",
       "url": "https://www.atbmarket.com/promo/sale_tovari",
       "end_time": "Sep 16, 2026 00:00:00",
       "first_seen": "2026-09-02 00:01"
     },
-    "micni": {
-      "title": "Ексклюзивна знижка з Карткою АТБ!",
-      "url": "https://www.atbmarket.com/promo/micni",
-      "end_time": "Sep 09, 2026 00:00:00",
-      "first_seen": "2026-09-02 00:01"
+    "loyalty": {
+      "title": "Лояльність",
+      "url": "https://www.atbmarket.com/promo/loyalty",
+      "end_time": "Sep 16, 2026 00:00:00",
+      "first_seen": "2026-09-02 18:01"
     },
     "economy": {
       "title": "Акція \"Економія\"",
       "url": "https://www.atbmarket.com/promo/economy",
-      "end_time": "Sep 09, 2026 00:00:00",
-      "first_seen": "2026-09-02 00:01"
-    },
-    "loyalty": {
-      "title": "Лояльність",
-      "url": "https://www.atbmarket.com/promo/loyalty",
-      "end_time": "Sep 10, 2026 00:00:00",
-      "first_seen": "2026-09-02 18:01"
-    },
-    "sim_dniv": {
-      "title": "Акція \"7 днів\"",
-      "url": "https://www.atbmarket.com/promo/sim_dniv",
-      "end_time": "Sep 09, 2026 00:00:00",
-      "first_seen": "2026-09-03 00:01"
-    },
-    "Jacobs": {
-      "title": "Jacobs Monarch",
-      "url": "https://www.atbmarket.com/promo/Jacobs",
-      "end_time": "Sep 09, 2026 00:00:00",
-      "first_seen": "2026-09-03 14:01"
+      "end_time": "Sep 16, 2026 00:00:00",
+      "first_seen": "2026-09-09 00:01"
     }
   },
-  "last_check": "2026-09-08 23:01"
+  "last_check": "2026-09-09 00:01"
 }
