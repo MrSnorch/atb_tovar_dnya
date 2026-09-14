@@ -7,7 +7,8 @@
     "sale_tovari",
     "loyalty",
     "economy",
-    "Jacobs"
+    "Jacobs",
+    "Dostavka"
   ],
   "promos": {
     "Hroniky_suly_2_v_ATB": {
@@ -57,7 +58,13 @@
       "url": "https://www.atbmarket.com/promo/Jacobs",
       "end_time": "Sep 16, 2026 00:00:00",
       "first_seen": "2026-09-09 12:21"
+    },
+    "Dostavka": {
+      "title": "Весь вересень — доставка з АТБ за 1 грн",
+      "url": "https://www.atbmarket.com/promo/Dostavka",
+      "end_time": "Sep 30, 2026 00:00:00",
+      "first_seen": "2026-09-14 14:01"
     }
   },
-  "last_check": "2026-09-14 13:01"
+  "last_check": "2026-09-14 14:01"
 }
