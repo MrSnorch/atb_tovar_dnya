@@ -4,11 +4,10 @@
     "STALKER2",
     "dostavka1",
     "L%C3%B6wenbr%C3%A4u",
-    "sale_tovari",
     "loyalty",
+    "Dostavka",
     "economy",
-    "Jacobs",
-    "Dostavka"
+    "VlasniTorhoviMarky"
   ],
   "promos": {
     "Hroniky_suly_2_v_ATB": {
@@ -35,36 +34,30 @@
       "end_time": "Oct 01, 2026 00:00:00",
       "first_seen": "2026-09-01 01:01"
     },
-    "sale_tovari": {
-      "title": "Суперціна",
-      "url": "https://www.atbmarket.com/promo/sale_tovari",
-      "end_time": "Sep 16, 2026 00:00:00",
-      "first_seen": "2026-09-02 00:01"
-    },
     "loyalty": {
       "title": "Лояльність",
       "url": "https://www.atbmarket.com/promo/loyalty",
-      "end_time": "Sep 23, 2026 00:00:00",
+      "end_time": "Sep 30, 2026 00:00:00",
       "first_seen": "2026-09-02 18:01"
-    },
-    "economy": {
-      "title": "Акція \"Економія\"",
-      "url": "https://www.atbmarket.com/promo/economy",
-      "end_time": "Sep 16, 2026 00:00:00",
-      "first_seen": "2026-09-09 00:01"
-    },
-    "Jacobs": {
-      "title": "Jacobs Monarch",
-      "url": "https://www.atbmarket.com/promo/Jacobs",
-      "end_time": "Sep 16, 2026 00:00:00",
-      "first_seen": "2026-09-09 12:21"
     },
     "Dostavka": {
       "title": "Весь вересень — доставка з АТБ за 1 грн",
       "url": "https://www.atbmarket.com/promo/Dostavka",
       "end_time": "Sep 30, 2026 00:00:00",
       "first_seen": "2026-09-14 14:01"
+    },
+    "economy": {
+      "title": "Акція \"Економія\"",
+      "url": "https://www.atbmarket.com/promo/economy",
+      "end_time": "Sep 23, 2026 00:00:00",
+      "first_seen": "2026-09-16 00:01"
+    },
+    "VlasniTorhoviMarky": {
+      "title": "Власні торгові марки АТБ",
+      "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
+      "end_time": "Sep 23, 2026 00:00:00",
+      "first_seen": "2026-09-16 00:01"
     }
   },
-  "last_check": "2026-09-15 23:10"
+  "last_check": "2026-09-16 00:01"
 }
