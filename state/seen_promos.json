@@ -7,7 +7,8 @@
     "loyalty",
     "Dostavka",
     "economy",
-    "VlasniTorhoviMarky"
+    "VlasniTorhoviMarky",
+    "sale_tovari"
   ],
   "promos": {
     "Hroniky_suly_2_v_ATB": {
@@ -57,7 +58,13 @@
       "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
       "end_time": "Sep 23, 2026 00:00:00",
       "first_seen": "2026-09-16 00:01"
+    },
+    "sale_tovari": {
+      "title": "Суперціна",
+      "url": "https://www.atbmarket.com/promo/sale_tovari",
+      "end_time": "Sep 23, 2026 00:00:00",
+      "first_seen": "2026-09-16 10:01"
     }
   },
-  "last_check": "2026-09-16 09:01"
+  "last_check": "2026-09-16 10:01"
 }
