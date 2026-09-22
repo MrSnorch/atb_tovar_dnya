@@ -7,9 +7,7 @@
     "loyalty",
     "Dostavka",
     "economy",
-    "VlasniTorhoviMarky",
-    "sale_tovari",
-    "Jacobs"
+    "VlasniTorhoviMarky"
   ],
   "promos": {
     "Hroniky_suly_2_v_ATB": {
@@ -51,27 +49,15 @@
     "economy": {
       "title": "Акція \"Економія\"",
       "url": "https://www.atbmarket.com/promo/economy",
-      "end_time": "Sep 23, 2026 00:00:00",
-      "first_seen": "2026-09-16 00:01"
+      "end_time": "Sep 30, 2026 00:00:00",
+      "first_seen": "2026-09-23 00:01"
     },
     "VlasniTorhoviMarky": {
       "title": "Власні торгові марки АТБ",
       "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
-      "end_time": "Sep 23, 2026 00:00:00",
-      "first_seen": "2026-09-16 00:01"
-    },
-    "sale_tovari": {
-      "title": "Суперціна",
-      "url": "https://www.atbmarket.com/promo/sale_tovari",
-      "end_time": "Sep 23, 2026 00:00:00",
-      "first_seen": "2026-09-16 10:01"
-    },
-    "Jacobs": {
-      "title": "Jacobs Monarch",
-      "url": "https://www.atbmarket.com/promo/Jacobs",
-      "end_time": "Sep 23, 2026 00:00:00",
-      "first_seen": "2026-09-17 15:01"
+      "end_time": "Sep 30, 2026 00:00:00",
+      "first_seen": "2026-09-23 00:01"
     }
   },
-  "last_check": "2026-09-22 23:01"
+  "last_check": "2026-09-23 00:01"
 }
