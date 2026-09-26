@@ -10,8 +10,7 @@
     "VlasniTorhoviMarky",
     "sale_tovari",
     "Jacobs",
-    "sim_dniv",
-    "dennarodgennya"
+    "sim_dniv"
   ],
   "promos": {
     "Hroniky_suly_2_v_ATB": {
@@ -79,13 +78,7 @@
       "url": "https://www.atbmarket.com/promo/sim_dniv",
       "end_time": "Sep 30, 2026 00:00:00",
       "first_seen": "2026-09-25 14:01"
-    },
-    "dennarodgennya": {
-      "title": "33 роки АТБ разом з вами!",
-      "url": "https://www.atbmarket.com/promo/dennarodgennya",
-      "end_time": "Sep 27, 2026 00:00:00",
-      "first_seen": "2026-09-26 00:01"
     }
   },
-  "last_check": "2026-09-26 23:07"
+  "last_check": "2026-09-27 00:01"
 }
