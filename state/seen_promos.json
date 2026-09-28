@@ -10,7 +10,8 @@
     "VlasniTorhoviMarky",
     "sale_tovari",
     "Jacobs",
-    "sim_dniv"
+    "sim_dniv",
+    "Animal"
   ],
   "promos": {
     "Hroniky_suly_2_v_ATB": {
@@ -78,7 +79,13 @@
       "url": "https://www.atbmarket.com/promo/sim_dniv",
       "end_time": "Sep 30, 2026 00:00:00",
       "first_seen": "2026-09-25 14:01"
+    },
+    "Animal": {
+      "title": "Тварини",
+      "url": "https://www.atbmarket.com/promo/Animal",
+      "end_time": "Oct 27, 2026 00:00:00",
+      "first_seen": "2026-09-28 17:01"
     }
   },
-  "last_check": "2026-09-28 16:01"
+  "last_check": "2026-09-28 17:01"
 }
