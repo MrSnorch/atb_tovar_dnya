@@ -1,15 +1,13 @@
 {
   "seen_slugs": [
     "Hroniky_suly_2_v_ATB",
-    "STALKER2",
-    "dostavka1",
-    "L%C3%B6wenbr%C3%A4u",
     "Animal",
     "economy",
     "sale_tovari",
     "znyzhky",
     "VlasniTorhoviMarky",
-    "loyalty"
+    "loyalty",
+    "sim_dniv"
   ],
   "promos": {
     "Hroniky_suly_2_v_ATB": {
@@ -17,24 +15,6 @@
       "url": "https://www.atbmarket.com/promo/Hroniky_suly_2_v_ATB",
       "end_time": "Oct 31, 2026 00:00:00",
       "first_seen": "2026-05-07 18:01"
-    },
-    "STALKER2": {
-      "title": "S.T.A.L.K.E.R.2",
-      "url": "https://www.atbmarket.com/promo/STALKER2",
-      "end_time": "Oct 01, 2026 00:00:00",
-      "first_seen": "2026-08-06 15:01"
-    },
-    "dostavka1": {
-      "title": "Весь вересень — доставка з АТБ за 1 грн",
-      "url": "https://www.atbmarket.com/promo/dostavka1",
-      "end_time": "Oct 01, 2026 00:00:00",
-      "first_seen": "2026-09-01 01:01"
-    },
-    "L%C3%B6wenbr%C3%A4u": {
-      "title": "Löwenbräu Original",
-      "url": "https://www.atbmarket.com/promo/L%C3%B6wenbr%C3%A4u",
-      "end_time": "Oct 01, 2026 00:00:00",
-      "first_seen": "2026-09-01 01:01"
     },
     "Animal": {
       "title": "Тварини",
@@ -71,7 +51,13 @@
       "url": "https://www.atbmarket.com/promo/loyalty",
       "end_time": "Oct 14, 2026 00:00:00",
       "first_seen": "2026-09-30 01:01"
+    },
+    "sim_dniv": {
+      "title": "Акція \"7 днів\"",
+      "url": "https://www.atbmarket.com/promo/sim_dniv",
+      "end_time": "Oct 08, 2026 00:00:00",
+      "first_seen": "2026-10-01 00:01"
     }
   },
-  "last_check": "2026-09-30 23:01"
+  "last_check": "2026-10-01 00:01"
 }
