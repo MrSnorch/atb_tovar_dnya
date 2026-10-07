@@ -2,13 +2,10 @@
   "seen_slugs": [
     "Hroniky_suly_2_v_ATB",
     "Animal",
-    "economy",
     "sale_tovari",
     "znyzhky",
-    "VlasniTorhoviMarky",
     "loyalty",
-    "sim_dniv",
-    "Jacobs"
+    "sim_dniv"
   ],
   "promos": {
     "Hroniky_suly_2_v_ATB": {
@@ -23,12 +20,6 @@
       "end_time": "Oct 27, 2026 00:00:00",
       "first_seen": "2026-09-28 17:01"
     },
-    "economy": {
-      "title": "Акція \"Економія\"",
-      "url": "https://www.atbmarket.com/promo/economy",
-      "end_time": "Oct 07, 2026 00:00:00",
-      "first_seen": "2026-09-30 01:01"
-    },
     "sale_tovari": {
       "title": "Суперціна",
       "url": "https://www.atbmarket.com/promo/sale_tovari",
@@ -39,12 +30,6 @@
       "title": "Знижка -20% за програмою Лояльності",
       "url": "https://www.atbmarket.com/promo/znyzhky",
       "end_time": "Oct 27, 2026 00:00:00",
-      "first_seen": "2026-09-30 01:01"
-    },
-    "VlasniTorhoviMarky": {
-      "title": "Власні торгові марки АТБ",
-      "url": "https://www.atbmarket.com/promo/VlasniTorhoviMarky",
-      "end_time": "Oct 07, 2026 00:00:00",
       "first_seen": "2026-09-30 01:01"
     },
     "loyalty": {
@@ -58,13 +43,7 @@
       "url": "https://www.atbmarket.com/promo/sim_dniv",
       "end_time": "Oct 08, 2026 00:00:00",
       "first_seen": "2026-10-01 00:01"
-    },
-    "Jacobs": {
-      "title": "Jacobs Monarch",
-      "url": "https://www.atbmarket.com/promo/Jacobs",
-      "end_time": "Oct 07, 2026 00:00:00",
-      "first_seen": "2026-10-02 13:01"
     }
   },
-  "last_check": "2026-10-05 15:23"
+  "last_check": "2026-10-07 16:01"
 }
