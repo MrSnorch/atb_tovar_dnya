@@ -4,8 +4,7 @@
     "Animal",
     "sale_tovari",
     "znyzhky",
-    "loyalty",
-    "sim_dniv"
+    "loyalty"
   ],
   "promos": {
     "Hroniky_suly_2_v_ATB": {
@@ -37,13 +36,7 @@
       "url": "https://www.atbmarket.com/promo/loyalty",
       "end_time": "Oct 14, 2026 00:00:00",
       "first_seen": "2026-09-30 01:01"
-    },
-    "sim_dniv": {
-      "title": "Акція \"7 днів\"",
-      "url": "https://www.atbmarket.com/promo/sim_dniv",
-      "end_time": "Oct 08, 2026 00:00:00",
-      "first_seen": "2026-10-01 00:01"
     }
   },
-  "last_check": "2026-10-07 23:01"
+  "last_check": "2026-10-08 00:03"
 }
