@@ -4,7 +4,10 @@
     "Animal",
     "sale_tovari",
     "znyzhky",
-    "loyalty"
+    "loyalty",
+    "economy",
+    "jacobs",
+    "vtm"
   ],
   "promos": {
     "Hroniky_suly_2_v_ATB": {
@@ -26,17 +29,35 @@
       "first_seen": "2026-09-30 01:01"
     },
     "znyzhky": {
-      "title": "Знижка -20% за програмою Лояльності",
+      "title": "Вигода з АТБільше — ще більше!",
       "url": "https://www.atbmarket.com/promo/znyzhky",
-      "end_time": "Oct 27, 2026 00:00:00",
+      "end_time": "Oct 14, 2026 00:00:00",
       "first_seen": "2026-09-30 01:01"
     },
     "loyalty": {
-      "title": "Лояльність",
+      "title": "Знижки -10% з програма лояльності АТБ",
       "url": "https://www.atbmarket.com/promo/loyalty",
       "end_time": "Oct 14, 2026 00:00:00",
       "first_seen": "2026-09-30 01:01"
+    },
+    "economy": {
+      "title": "Економія",
+      "url": "https://www.atbmarket.com/promo/economy",
+      "end_time": "Oct 14, 2026 00:00:00",
+      "first_seen": "2026-10-11 09:01"
+    },
+    "jacobs": {
+      "title": "Jacobs",
+      "url": "https://www.atbmarket.com/promo/jacobs",
+      "end_time": "Oct 14, 2026 00:00:00",
+      "first_seen": "2026-10-11 09:01"
+    },
+    "vtm": {
+      "title": "Власні торгові марки АТБ",
+      "url": "https://www.atbmarket.com/promo/vtm",
+      "end_time": "Oct 14, 2026 00:00:00",
+      "first_seen": "2026-10-11 09:01"
     }
   },
-  "last_check": "2026-10-11 08:01"
+  "last_check": "2026-10-11 09:01"
 }
