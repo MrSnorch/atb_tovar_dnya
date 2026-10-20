@@ -7,7 +7,8 @@
     "sale_tovari",
     "znyzhky",
     "loyalty",
-    "vtm"
+    "vtm",
+    "jacobs"
   ],
   "promos": {
     "Hroniky_suly_2_v_ATB": {
@@ -57,7 +58,13 @@
       "url": "https://www.atbmarket.com/promo/vtm",
       "end_time": "Oct 21, 2026 00:00:00",
       "first_seen": "2026-10-14 00:01"
+    },
+    "jacobs": {
+      "title": "Jacobs",
+      "url": "https://www.atbmarket.com/promo/jacobs",
+      "end_time": "Oct 21, 2026 00:00:00",
+      "first_seen": "2026-10-20 17:01"
     }
   },
-  "last_check": "2026-10-20 16:08"
+  "last_check": "2026-10-20 17:01"
 }
