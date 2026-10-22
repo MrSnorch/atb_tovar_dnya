@@ -8,7 +8,8 @@
     "loyalty",
     "economy",
     "vtm",
-    "jacobs"
+    "jacobs",
+    "FREE"
   ],
   "promos": {
     "Hroniky_suly_2_v_ATB": {
@@ -64,7 +65,13 @@
       "url": "https://www.atbmarket.com/promo/jacobs",
       "end_time": "Oct 28, 2026 00:00:00",
       "first_seen": "2026-10-21 12:40"
+    },
+    "FREE": {
+      "title": "Безкоштовна доставка на перше замовлення",
+      "url": "https://www.atbmarket.com/promo/FREE",
+      "end_time": "Nov 30, 2026 00:00:00",
+      "first_seen": "2026-10-22 10:01"
     }
   },
-  "last_check": "2026-10-22 09:01"
+  "last_check": "2026-10-22 10:01"
 }
