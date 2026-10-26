@@ -1,7 +1,6 @@
 {
   "seen_slugs": [
     "Hroniky_suly_2_v_ATB",
-    "Animal",
     "DC",
     "sale_tovari",
     "znyzhky",
@@ -17,12 +16,6 @@
       "url": "https://www.atbmarket.com/promo/Hroniky_suly_2_v_ATB",
       "end_time": "Oct 31, 2026 00:00:00",
       "first_seen": "2026-05-07 18:01"
-    },
-    "Animal": {
-      "title": "Тварини",
-      "url": "https://www.atbmarket.com/promo/Animal",
-      "end_time": "Oct 27, 2026 00:00:00",
-      "first_seen": "2026-09-28 17:01"
     },
     "DC": {
       "title": "Відкрий безмежний всесвіт героїв DC в АТБ!",
@@ -73,5 +66,5 @@
       "first_seen": "2026-10-22 10:01"
     }
   },
-  "last_check": "2026-10-26 23:01"
+  "last_check": "2026-10-27 00:01"
 }
