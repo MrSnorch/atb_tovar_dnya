@@ -4,8 +4,11 @@
     "DC",
     "znyzhky",
     "FREE",
-    "jacobs",
-    "vtm"
+    "economy",
+    "sale_tovari",
+    "STALKER",
+    "loyalty",
+    "kupuydrugu"
   ],
   "promos": {
     "Hroniky_suly_2_v_ATB": {
@@ -32,18 +35,36 @@
       "end_time": "Nov 30, 2026 00:00:00",
       "first_seen": "2026-10-22 10:01"
     },
-    "jacobs": {
-      "title": "Jacobs",
-      "url": "https://www.atbmarket.com/promo/jacobs",
-      "end_time": "Oct 28, 2026 00:00:00",
+    "economy": {
+      "title": "Економія",
+      "url": "https://www.atbmarket.com/promo/economy",
+      "end_time": "Nov 04, 2026 00:00:00",
       "first_seen": "2026-10-28 00:01"
     },
-    "vtm": {
-      "title": "Власні торгові марки АТБ",
-      "url": "https://www.atbmarket.com/promo/vtm",
-      "end_time": "Oct 28, 2026 00:00:00",
+    "sale_tovari": {
+      "title": "Суперціна",
+      "url": "https://www.atbmarket.com/promo/sale_tovari",
+      "end_time": "Nov 11, 2026 00:00:00",
+      "first_seen": "2026-10-28 00:01"
+    },
+    "STALKER": {
+      "title": "Зона виграшів відкрита!",
+      "url": "https://www.atbmarket.com/promo/STALKER",
+      "end_time": "Nov 10, 2026 00:00:00",
+      "first_seen": "2026-10-28 00:01"
+    },
+    "loyalty": {
+      "title": "Знижки -10% з програмою лояльності АТБ",
+      "url": "https://www.atbmarket.com/promo/loyalty",
+      "end_time": "Nov 11, 2026 00:00:00",
+      "first_seen": "2026-10-28 00:01"
+    },
+    "kupuydrugu": {
+      "title": "Купуй другу зі знижкою -50%",
+      "url": "https://www.atbmarket.com/promo/kupuydrugu",
+      "end_time": "Dec 08, 2026 00:00:00",
       "first_seen": "2026-10-28 00:01"
     }
   },
-  "last_check": "2026-10-27 23:07"
+  "last_check": "2026-10-28 00:01"
 }
