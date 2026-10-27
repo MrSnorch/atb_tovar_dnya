@@ -13,11 +13,13 @@ ATB Market — єдиний скрипт.
 import os
 import sys
 import json
+import time
 import logging
 import requests
 import cloudscraper
 from bs4 import BeautifulSoup
-from datetime import datetime, timezone, timedelta
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 logging.basicConfig(
     level=logging.INFO,
@@ -66,8 +68,12 @@ HEADERS = {
 #  СПІЛЬНІ УТИЛІТИ
 # ═══════════════════════════════════════════════════════════
 
+KYIV_TZ = ZoneInfo("Europe/Kyiv")
+
+
 def київський_час() -> datetime:
-    return datetime.now(timezone.utc) + timedelta(hours=3)
+    # Автоматично враховує літній/зимовий час (UTC+3 / UTC+2)
+    return datetime.now(KYIV_TZ)
 
 
 def сьогодні_дата() -> str:
@@ -88,44 +94,62 @@ def розпарсити_куки(рядок: str) -> dict:
     return куки
 
 
-def завантажити_сторінку(url: str) -> str:
+def завантажити_сторінку(url: str, спроб: int = 3) -> str | None:
+    """Повертає HTML сторінки.
+    None — сторінка недоступна (404, або 403/мережева помилка після всіх спроб):
+    скрипт не падає, наступний запуск спробує знову.
+    """
     рядок_куків = os.environ.get("ATB_COOKIES", "").strip()
     куки = розпарсити_куки(рядок_куків) if рядок_куків else {}
+    профілі = ["chrome", "firefox", "chrome"]
+    статус = None
 
-    try:
-        log.info("cloudscraper → %s", url)
-        scraper = cloudscraper.create_scraper(
-            browser={"browser": "chrome", "platform": "windows", "mobile": False}
-        )
-        if куки:
-            scraper.cookies.update(куки)
-        resp = scraper.get(url, headers=HEADERS, timeout=30)
-        if resp.status_code == 404:
-            log.warning("cloudscraper: 404 — сторінка не знайдена.")
-            return None
-        resp.raise_for_status()
-        log.info("OK (HTTP %d)", resp.status_code)
-        return resp.text
-    except Exception as e:
-        log.warning("cloudscraper: %s", e)
-
-    if куки:
-        log.info("requests+cookies → %s", url)
+    for спроба in range(1, спроб + 1):
+        # 1) cloudscraper (на непарних спробах — з нашими заголовками, на парних — з власними)
         try:
-            resp = requests.get(url, headers=HEADERS, cookies=куки, timeout=30)
-            resp.raise_for_status()
-            log.info("OK (HTTP %d)", resp.status_code)
-            return resp.text
-        except requests.exceptions.HTTPError as e:
-            if e.response is not None and e.response.status_code == 404:
-                log.warning("requests+cookies: 404 — сторінка не знайдена.")
+            log.info("cloudscraper [%d/%d] → %s", спроба, спроб, url)
+            scraper = cloudscraper.create_scraper(
+                browser={"browser": профілі[(спроба - 1) % len(профілі)],
+                         "platform": "windows", "mobile": False}
+            )
+            if куки:
+                scraper.cookies.update(куки)
+            resp = scraper.get(
+                url, headers=HEADERS if спроба % 2 == 1 else None, timeout=30
+            )
+            статус = resp.status_code
+            if статус == 404:
+                log.warning("cloudscraper: 404 — сторінка не знайдена.")
                 return None
-            raise
+            if resp.ok:
+                log.info("OK (HTTP %d)", статус)
+                return resp.text
+            log.warning("cloudscraper: HTTP %d", статус)
+        except Exception as e:
+            log.warning("cloudscraper: %s", e)
 
-    raise RuntimeError(
-        "Не вдалося завантажити сторінку. "
-        "Задайте ATB_COOKIES у секретах GitHub Actions."
-    )
+        # 2) requests + куки
+        if куки:
+            try:
+                log.info("requests+cookies [%d/%d] → %s", спроба, спроб, url)
+                resp = requests.get(url, headers=HEADERS, cookies=куки, timeout=30)
+                статус = resp.status_code
+                if статус == 404:
+                    log.warning("requests+cookies: 404 — сторінка не знайдена.")
+                    return None
+                if resp.ok:
+                    log.info("OK (HTTP %d)", статус)
+                    return resp.text
+                log.warning("requests+cookies: HTTP %d", статус)
+            except Exception as e:
+                log.warning("requests+cookies: %s", e)
+
+        if спроба < спроб:
+            time.sleep(5 * спроба)
+
+    log.error("Не вдалося завантажити %s (останній статус: %s) — пропускаємо цей запуск.",
+              url, статус)
+    return None
 
 
 def прочитати_стан(path: str, порожній: dict) -> dict:
@@ -520,6 +544,9 @@ def запустити_акції(токен: str, chat_id: str, стан_тов
     очистити_протерміновані_акції(стан_акції)
 
     html = завантажити_сторінку(URL_PROMOS)
+    if html is None:
+        log.warning("Акції: сторінка недоступна — пропускаємо оновлення.")
+        return
     акції = парсити_акції(html)
     log.info("Знайдено акцій: %d", len(акції))
 
