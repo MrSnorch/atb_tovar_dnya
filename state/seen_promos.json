@@ -2,13 +2,10 @@
   "seen_slugs": [
     "Hroniky_suly_2_v_ATB",
     "DC",
-    "sale_tovari",
     "znyzhky",
-    "loyalty",
-    "economy",
-    "vtm",
+    "FREE",
     "jacobs",
-    "FREE"
+    "vtm"
   ],
   "promos": {
     "Hroniky_suly_2_v_ATB": {
@@ -23,48 +20,30 @@
       "end_time": "Nov 30, 2026 00:00:00",
       "first_seen": "2026-10-14 00:01"
     },
-    "sale_tovari": {
-      "title": "Суперціна",
-      "url": "https://www.atbmarket.com/promo/sale_tovari",
-      "end_time": "Oct 28, 2026 00:00:00",
-      "first_seen": "2026-10-14 00:01"
-    },
     "znyzhky": {
       "title": "Вигода з АТБільше — ще більше!",
       "url": "https://www.atbmarket.com/promo/znyzhky",
       "end_time": "Nov 12, 2026 00:00:00",
       "first_seen": "2026-10-14 00:01"
     },
-    "loyalty": {
-      "title": "Знижки -10% з програмою лояльності АТБ",
-      "url": "https://www.atbmarket.com/promo/loyalty",
-      "end_time": "Oct 28, 2026 00:00:00",
-      "first_seen": "2026-10-14 00:01"
-    },
-    "economy": {
-      "title": "Економія",
-      "url": "https://www.atbmarket.com/promo/economy",
-      "end_time": "Oct 28, 2026 00:00:00",
-      "first_seen": "2026-10-21 00:01"
-    },
-    "vtm": {
-      "title": "Власні торгові марки АТБ",
-      "url": "https://www.atbmarket.com/promo/vtm",
-      "end_time": "Oct 28, 2026 00:00:00",
-      "first_seen": "2026-10-21 00:01"
-    },
-    "jacobs": {
-      "title": "Jacobs",
-      "url": "https://www.atbmarket.com/promo/jacobs",
-      "end_time": "Oct 28, 2026 00:00:00",
-      "first_seen": "2026-10-21 12:40"
-    },
     "FREE": {
       "title": "Безкоштовна доставка на перше замовлення",
       "url": "https://www.atbmarket.com/promo/FREE",
       "end_time": "Nov 30, 2026 00:00:00",
       "first_seen": "2026-10-22 10:01"
+    },
+    "jacobs": {
+      "title": "Jacobs",
+      "url": "https://www.atbmarket.com/promo/jacobs",
+      "end_time": "Oct 28, 2026 00:00:00",
+      "first_seen": "2026-10-28 00:01"
+    },
+    "vtm": {
+      "title": "Власні торгові марки АТБ",
+      "url": "https://www.atbmarket.com/promo/vtm",
+      "end_time": "Oct 28, 2026 00:00:00",
+      "first_seen": "2026-10-28 00:01"
     }
   },
-  "last_check": "2026-10-27 23:01"
+  "last_check": "2026-10-28 00:01"
 }
