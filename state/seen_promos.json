@@ -9,7 +9,8 @@
     "STALKER",
     "loyalty",
     "kupuydrugu",
-    "vtm"
+    "vtm",
+    "jacobs"
   ],
   "promos": {
     "Hroniky_suly_2_v_ATB": {
@@ -71,7 +72,13 @@
       "url": "https://www.atbmarket.com/promo/vtm",
       "end_time": "Nov 04, 2026 00:00:00",
       "first_seen": "2026-10-28 10:01"
+    },
+    "jacobs": {
+      "title": "Jacobs",
+      "url": "https://www.atbmarket.com/promo/jacobs",
+      "end_time": "Nov 04, 2026 00:00:00",
+      "first_seen": "2026-10-28 12:01"
     }
   },
-  "last_check": "2026-10-28 11:01"
+  "last_check": "2026-10-28 12:01"
 }
