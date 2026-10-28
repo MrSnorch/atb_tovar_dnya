@@ -8,7 +8,8 @@
     "sale_tovari",
     "STALKER",
     "loyalty",
-    "kupuydrugu"
+    "kupuydrugu",
+    "vtm"
   ],
   "promos": {
     "Hroniky_suly_2_v_ATB": {
@@ -64,7 +65,13 @@
       "url": "https://www.atbmarket.com/promo/kupuydrugu",
       "end_time": "Dec 08, 2026 00:00:00",
       "first_seen": "2026-10-28 00:01"
+    },
+    "vtm": {
+      "title": "Власні торгові марки АТБ",
+      "url": "https://www.atbmarket.com/promo/vtm",
+      "end_time": "Nov 04, 2026 00:00:00",
+      "first_seen": "2026-10-28 10:01"
     }
   },
-  "last_check": "2026-10-28 09:02"
+  "last_check": "2026-10-28 10:01"
 }
