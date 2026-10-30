@@ -1,6 +1,5 @@
 {
   "seen_slugs": [
-    "Hroniky_suly_2_v_ATB",
     "DC",
     "znyzhky",
     "FREE",
@@ -13,12 +12,6 @@
     "jacobs"
   ],
   "promos": {
-    "Hroniky_suly_2_v_ATB": {
-      "title": "Хроніки Сили 2 в АТБ!",
-      "url": "https://www.atbmarket.com/promo/Hroniky_suly_2_v_ATB",
-      "end_time": "Oct 31, 2026 00:00:00",
-      "first_seen": "2026-05-07 18:01"
-    },
     "DC": {
       "title": "Відкрий безмежний всесвіт героїв DC в АТБ!",
       "url": "https://www.atbmarket.com/promo/DC",
@@ -80,5 +73,5 @@
       "first_seen": "2026-10-28 12:01"
     }
   },
-  "last_check": "2026-10-30 23:01"
+  "last_check": "2026-10-31 00:01"
 }
