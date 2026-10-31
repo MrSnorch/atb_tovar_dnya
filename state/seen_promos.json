@@ -9,7 +9,8 @@
     "loyalty",
     "kupuydrugu",
     "vtm",
-    "jacobs"
+    "jacobs",
+    "lvivske"
   ],
   "promos": {
     "DC": {
@@ -71,7 +72,13 @@
       "url": "https://www.atbmarket.com/promo/jacobs",
       "end_time": "Nov 04, 2026 00:00:00",
       "first_seen": "2026-10-28 12:01"
+    },
+    "lvivske": {
+      "title": "Львівське Різдвяне",
+      "url": "https://www.atbmarket.com/promo/lvivske",
+      "end_time": "Dec 01, 2026 00:00:00",
+      "first_seen": "2026-11-01 00:01"
     }
   },
-  "last_check": "2026-10-31 23:01"
+  "last_check": "2026-11-01 00:01"
 }
