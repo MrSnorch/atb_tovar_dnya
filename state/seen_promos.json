@@ -3,14 +3,13 @@
     "DC",
     "znyzhky",
     "FREE",
-    "economy",
     "sale_tovari",
     "STALKER",
     "loyalty",
     "kupuydrugu",
-    "vtm",
-    "jacobs",
-    "lvivske"
+    "lvivske",
+    "economy",
+    "vtm"
   ],
   "promos": {
     "DC": {
@@ -30,12 +29,6 @@
       "url": "https://www.atbmarket.com/promo/FREE",
       "end_time": "Nov 30, 2026 00:00:00",
       "first_seen": "2026-10-22 10:01"
-    },
-    "economy": {
-      "title": "Економія",
-      "url": "https://www.atbmarket.com/promo/economy",
-      "end_time": "Nov 04, 2026 00:00:00",
-      "first_seen": "2026-10-28 00:01"
     },
     "sale_tovari": {
       "title": "Суперціна",
@@ -61,24 +54,24 @@
       "end_time": "Dec 08, 2026 00:00:00",
       "first_seen": "2026-10-28 00:01"
     },
-    "vtm": {
-      "title": "Власні торгові марки АТБ",
-      "url": "https://www.atbmarket.com/promo/vtm",
-      "end_time": "Nov 04, 2026 00:00:00",
-      "first_seen": "2026-10-28 10:01"
-    },
-    "jacobs": {
-      "title": "Jacobs",
-      "url": "https://www.atbmarket.com/promo/jacobs",
-      "end_time": "Nov 04, 2026 00:00:00",
-      "first_seen": "2026-10-28 12:01"
-    },
     "lvivske": {
       "title": "Львівське Різдвяне",
       "url": "https://www.atbmarket.com/promo/lvivske",
       "end_time": "Dec 01, 2026 00:00:00",
       "first_seen": "2026-11-01 00:01"
+    },
+    "economy": {
+      "title": "Економія",
+      "url": "https://www.atbmarket.com/promo/economy",
+      "end_time": "Nov 11, 2026 00:00:00",
+      "first_seen": "2026-11-04 00:01"
+    },
+    "vtm": {
+      "title": "Власні торгові марки АТБ",
+      "url": "https://www.atbmarket.com/promo/vtm",
+      "end_time": "Nov 11, 2026 00:00:00",
+      "first_seen": "2026-11-04 00:01"
     }
   },
-  "last_check": "2026-11-03 23:01"
+  "last_check": "2026-11-04 00:01"
 }
