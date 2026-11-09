@@ -3,7 +3,6 @@
     "DC",
     "znyzhky",
     "FREE",
-    "STALKER",
     "loyalty",
     "kupuydrugu",
     "lvivske",
@@ -30,12 +29,6 @@
       "url": "https://www.atbmarket.com/promo/FREE",
       "end_time": "Nov 30, 2026 00:00:00",
       "first_seen": "2026-10-22 10:01"
-    },
-    "STALKER": {
-      "title": "Зона виграшів відкрита!",
-      "url": "https://www.atbmarket.com/promo/STALKER",
-      "end_time": "Nov 10, 2026 00:00:00",
-      "first_seen": "2026-10-28 00:01"
     },
     "loyalty": {
       "title": "Знижки -10% з програмою лояльності АТБ",
@@ -80,5 +73,5 @@
       "first_seen": "2026-11-07 00:01"
     }
   },
-  "last_check": "2026-11-09 23:01"
+  "last_check": "2026-11-10 00:01"
 }
