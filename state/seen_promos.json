@@ -1,7 +1,6 @@
 {
   "seen_slugs": [
     "DC",
-    "znyzhky",
     "FREE",
     "kupuydrugu",
     "lvivske",
@@ -16,12 +15,6 @@
       "title": "Відкрий безмежний всесвіт героїв DC в АТБ!",
       "url": "https://www.atbmarket.com/promo/DC",
       "end_time": "Nov 30, 2026 00:00:00",
-      "first_seen": "2026-10-14 00:01"
-    },
-    "znyzhky": {
-      "title": "Вигода з АТБільше — ще більше!",
-      "url": "https://www.atbmarket.com/promo/znyzhky",
-      "end_time": "Nov 12, 2026 00:00:00",
       "first_seen": "2026-10-14 00:01"
     },
     "FREE": {
@@ -73,5 +66,5 @@
       "first_seen": "2026-11-11 16:01"
     }
   },
-  "last_check": "2026-11-11 23:01"
+  "last_check": "2026-11-12 00:01"
 }
