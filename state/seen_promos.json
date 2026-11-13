@@ -8,9 +8,7 @@
     "sale_tovari",
     "loyalty",
     "vtm",
-    "jacobs",
-    "black_friday",
-    "sale_tovary"
+    "jacobs"
   ],
   "promos": {
     "DC": {
@@ -66,19 +64,7 @@
       "url": "https://www.atbmarket.com/promo/jacobs",
       "end_time": "Nov 18, 2026 00:00:00",
       "first_seen": "2026-11-11 16:01"
-    },
-    "black_friday": {
-      "title": "Кожна п'ятниця знижкова",
-      "url": "https://www.atbmarket.com/promo/black_friday",
-      "end_time": "Nov 14, 2026 00:00:00",
-      "first_seen": "2026-11-13 00:01"
-    },
-    "sale_tovary": {
-      "title": "Суперціна",
-      "url": "https://www.atbmarket.com/promo/sale_tovary",
-      "end_time": "Nov 14, 2026 00:00:00",
-      "first_seen": "2026-11-13 00:01"
     }
   },
-  "last_check": "2026-11-13 23:01"
+  "last_check": "2026-11-14 00:01"
 }
