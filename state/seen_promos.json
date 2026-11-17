@@ -4,11 +4,10 @@
     "FREE",
     "kupuydrugu",
     "lvivske",
-    "economy",
     "sale_tovari",
     "loyalty",
-    "vtm",
-    "jacobs"
+    "economy",
+    "vtm"
   ],
   "promos": {
     "DC": {
@@ -35,12 +34,6 @@
       "end_time": "Dec 01, 2026 00:00:00",
       "first_seen": "2026-11-01 00:01"
     },
-    "economy": {
-      "title": "Економія",
-      "url": "https://www.atbmarket.com/promo/economy",
-      "end_time": "Nov 18, 2026 00:00:00",
-      "first_seen": "2026-11-11 00:01"
-    },
     "sale_tovari": {
       "title": "Суперціна",
       "url": "https://www.atbmarket.com/promo/sale_tovari",
@@ -53,18 +46,18 @@
       "end_time": "Nov 25, 2026 00:00:00",
       "first_seen": "2026-11-11 00:01"
     },
+    "economy": {
+      "title": "Економія",
+      "url": "https://www.atbmarket.com/promo/economy",
+      "end_time": "Nov 25, 2026 00:00:00",
+      "first_seen": "2026-11-18 00:01"
+    },
     "vtm": {
       "title": "Власні торгові марки АТБ",
       "url": "https://www.atbmarket.com/promo/vtm",
-      "end_time": "Nov 18, 2026 00:00:00",
-      "first_seen": "2026-11-11 00:01"
-    },
-    "jacobs": {
-      "title": "Jacobs",
-      "url": "https://www.atbmarket.com/promo/jacobs",
-      "end_time": "Nov 18, 2026 00:00:00",
-      "first_seen": "2026-11-11 16:01"
+      "end_time": "Nov 25, 2026 00:00:00",
+      "first_seen": "2026-11-18 00:01"
     }
   },
-  "last_check": "2026-11-17 23:01"
+  "last_check": "2026-11-18 00:01"
 }
