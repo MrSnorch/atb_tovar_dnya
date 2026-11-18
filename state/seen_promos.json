@@ -7,7 +7,8 @@
     "sale_tovari",
     "loyalty",
     "economy",
-    "vtm"
+    "vtm",
+    "jacobs"
   ],
   "promos": {
     "DC": {
@@ -57,7 +58,13 @@
       "url": "https://www.atbmarket.com/promo/vtm",
       "end_time": "Nov 25, 2026 00:00:00",
       "first_seen": "2026-11-18 00:01"
+    },
+    "jacobs": {
+      "title": "Jacobs",
+      "url": "https://www.atbmarket.com/promo/jacobs",
+      "end_time": "Nov 25, 2026 00:00:00",
+      "first_seen": "2026-11-18 12:01"
     }
   },
-  "last_check": "2026-11-18 11:01"
+  "last_check": "2026-11-18 12:01"
 }
