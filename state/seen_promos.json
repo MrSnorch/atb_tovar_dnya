@@ -8,7 +8,9 @@
     "loyalty",
     "economy",
     "vtm",
-    "jacobs"
+    "jacobs",
+    "znyzhky",
+    "znyzhky2"
   ],
   "promos": {
     "DC": {
@@ -64,7 +66,19 @@
       "url": "https://www.atbmarket.com/promo/jacobs",
       "end_time": "Nov 25, 2026 00:00:00",
       "first_seen": "2026-11-18 12:01"
+    },
+    "znyzhky": {
+      "title": "Знижка -20% за програмою Лояльності",
+      "url": "https://www.atbmarket.com/promo/znyzhky",
+      "end_time": "Dec 23, 2026 00:00:00",
+      "first_seen": "2026-11-22 00:01"
+    },
+    "znyzhky2": {
+      "title": "Знижка -20% за програмою Лояльності",
+      "url": "https://www.atbmarket.com/promo/znyzhky2",
+      "end_time": "Dec 23, 2026 00:00:00",
+      "first_seen": "2026-11-22 00:01"
     }
   },
-  "last_check": "2026-11-21 23:01"
+  "last_check": "2026-11-22 00:01"
 }
