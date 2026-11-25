@@ -9,7 +9,8 @@
     "economy",
     "sale_tovari",
     "loyalty",
-    "vtm"
+    "vtm",
+    "SaintNicholas"
   ],
   "promos": {
     "DC": {
@@ -71,7 +72,13 @@
       "url": "https://www.atbmarket.com/promo/vtm",
       "end_time": "Dec 02, 2026 00:00:00",
       "first_seen": "2026-11-25 00:01"
+    },
+    "SaintNicholas": {
+      "title": "День Святого Миколая",
+      "url": "https://www.atbmarket.com/promo/SaintNicholas",
+      "end_time": "Dec 09, 2026 00:00:00",
+      "first_seen": "2026-11-25 11:01"
     }
   },
-  "last_check": "2026-11-25 10:01"
+  "last_check": "2026-11-25 11:01"
 }
