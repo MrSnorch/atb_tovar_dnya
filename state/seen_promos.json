@@ -10,7 +10,8 @@
     "sale_tovari",
     "loyalty",
     "vtm",
-    "SaintNicholas"
+    "SaintNicholas",
+    "jacobs"
   ],
   "promos": {
     "DC": {
@@ -78,7 +79,13 @@
       "url": "https://www.atbmarket.com/promo/SaintNicholas",
       "end_time": "Dec 09, 2026 00:00:00",
       "first_seen": "2026-11-25 11:01"
+    },
+    "jacobs": {
+      "title": "Jacobs",
+      "url": "https://www.atbmarket.com/promo/jacobs",
+      "end_time": "Dec 02, 2026 00:00:00",
+      "first_seen": "2026-11-25 13:01"
     }
   },
-  "last_check": "2026-11-25 11:01"
+  "last_check": "2026-11-25 13:01"
 }
