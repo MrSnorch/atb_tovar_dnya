@@ -12,7 +12,8 @@
     "vtm",
     "SaintNicholas",
     "jacobs",
-    "black_friday"
+    "black_friday",
+    "sale_tovary"
   ],
   "promos": {
     "DC": {
@@ -92,7 +93,13 @@
       "url": "https://www.atbmarket.com/promo/black_friday",
       "end_time": "Nov 28, 2026 00:00:00",
       "first_seen": "2026-11-26 10:01"
+    },
+    "sale_tovary": {
+      "title": "Суперціна",
+      "url": "https://www.atbmarket.com/promo/sale_tovary",
+      "end_time": "Nov 28, 2026 00:00:00",
+      "first_seen": "2026-11-27 00:01"
     }
   },
-  "last_check": "2026-11-26 23:01"
+  "last_check": "2026-11-27 00:01"
 }
