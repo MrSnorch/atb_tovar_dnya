@@ -91,7 +91,7 @@
     "black_friday": {
       "title": "Кожна п'ятниця знижкова",
       "url": "https://www.atbmarket.com/promo/black_friday",
-      "end_time": "Nov 28, 2026 00:00:00",
+      "end_time": "Nov 29, 2026 00:00:00",
       "first_seen": "2026-11-26 10:01"
     },
     "sale_tovary": {
@@ -101,5 +101,5 @@
       "first_seen": "2026-11-27 00:01"
     }
   },
-  "last_check": "2026-11-27 16:01"
+  "last_check": "2026-11-27 17:01"
 }
